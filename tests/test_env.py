@@ -9,6 +9,9 @@ def environment_stage_only(monkeypatch):
     """CLI mechanics are tested on the environment stage only; the measurement
     stages are exercised by the fast-measurements CI job."""
     monkeypatch.setattr(stages, "STAGES", [stages.environment_stage])
+    import pricing_crosscheck.cli as cli
+
+    monkeypatch.setattr(cli, "write_report", lambda *a, **k: None)
 
 
 def test_versions_are_recorded():
