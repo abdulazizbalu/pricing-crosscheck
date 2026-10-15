@@ -18,7 +18,7 @@ from pricing_crosscheck.results import (
     write_manifest,
     write_table,
 )
-from pricing_crosscheck.stages import PROFILES, run_stages
+from pricing_crosscheck.stages import PROFILES, run_stages, write_report
 
 DEFAULT_RESULTS = env.REPO_ROOT / "results"
 
@@ -52,9 +52,13 @@ def _run(profile: str, out_root: Path, jobs: int) -> Path:
     versions = env.library_versions()
     digest = env.content_hash(versions=versions)
     header = env.metadata_lines(profile)
+    tables = {}
     for table in run_stages(profile, jobs=jobs, out_root=out_root):
         write_table(table, directory, header)
+        tables[table.name] = table
     write_manifest(directory, digest, versions, profile, _distributions())
+    publish = profile == "full" and out_root.resolve() == DEFAULT_RESULTS.resolve()
+    write_report(profile, directory, tables, publish)
     return directory
 
 

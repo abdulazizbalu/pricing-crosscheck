@@ -339,4 +339,48 @@ runs on manual dispatch and weekly.
 
 ## Deviations from protocol
 
-None yet.
+1. **QuantLib LR tree step counts (section 10).** The protocol stated that
+   QuantLib's LR tree increases even step counts by one. Observed behaviour
+   differs: with even counts the engine converges at first order with errors
+   several orders of magnitude larger than with the neighbouring odd counts
+   (experiment `lr_even_odd` in `results/full/experiments.csv`, chart
+   `docs/figures/lr_even_odd.png`). The convergence ladder therefore uses the
+   odd counts 25, 51, 101, ..., 6401 for `ql_lr`; even counts are reported in
+   the separate experiment. The grid setting (1001 steps) is unchanged, and the
+   2x and 4x refinement runs of section 11 use 2003 and 4005 steps.
+2. **Digital `ql_mc` settings (section 4).** The digital entry of
+   `specs/phase1.json` lists only the class and sample count. The remaining
+   settings (pseudorandom, one time step, antithetic) are taken from the
+   European `ql_mc` entry. The engine refuses the payoff in any case.
+3. **Monte Carlo subsets outside the fast grid (section 3).** In the `fast`
+   profile the American Monte Carlo subset (D = 91) is not part of the fast
+   vanilla grid. Engines restricted to a subset are run on the subset points
+   and the reference is computed there as well; no other engine runs on
+   those points.
+4. **American convergence ladder (section 10).** `own_pde` is not an American
+   engine in the spec (the American PDE is `ref_pde`), so the American PDE
+   ladder contains QuantLib FD only; the convergence of our American PDE is
+   covered by the reference levels and the validation tests.
+5. **Disclosure, American reference implementation.** After the protocol was
+   merged, running the fast grid showed that the penalty iteration of
+   `ref_pde` did not terminate at r = q = 0 (value equal to the payoff up to
+   rounding over a whole region). The fix (an activation threshold of 1e-13
+   relative, replacing an earlier attempt with a solution-change stopping
+   rule that degraded accuracy to first order) changes the solver, not the
+   protocol. It is covered by a test. QuantLib prices had been computed in the
+   same run, but no comparison with the references had been looked at when
+   the fix was made.
+6. **Seeds of refinement runs (sections 11 and 12).** Refinement and
+   convergence runs pass their run tag to the seed derivation:
+   `refine=<factor>` (MC sample refinement), `monitoring=<factor>` (barrier
+   monitoring refinement), `refine=<time factor>x<sample factor>` (LSM) and
+   `convergence;<experiment>;<variant>;<level>` (convergence ladders); barrier
+   MC tags also carry `steps_per_year`. The protocol fixed the rule but not
+   these strings.
+7. **Longstaff-Schwartz refinement (section 11, rule 6).** Time steps and
+   samples are refined in pairs: (2x steps, 4x samples) and (4x steps,
+   16x samples), on the 24-point American MC subset.
+8. **Report columns.** The price summary adds "max abs diff / tol"; the
+   identity summary reports the largest violation and the number of
+   informative points instead of a signed residual.
+

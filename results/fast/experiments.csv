@@ -1,0 +1,55 @@
+# profile: fast
+# content_hash: 2eb52e37f467360340cd841e005f608a7a3340313e6614386d2bae1cd418d172
+# python: 3.12.3
+# implementation: CPython
+# platform: linux-x86_64
+# QuantLib: 1.43
+# numpy: 2.2.6
+# scipy: 1.15.3
+# matplotlib: 3.10.7
+# QuantLib_compiled: 1.43
+# all other packages: requirements.lock
+experiment,instrument,point_id,engine,quantity,parameter,value,reference,error
+lr_even_odd,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_lr,price,100,12.319374138000427,12.442646395566044,-0.12327225756561688
+lr_even_odd,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_lr,price,101,12.442590932549075,12.442646395566044,-5.546301696846001e-05
+lr_even_odd,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_lr,price,400,12.411562453160498,12.442646395566044,-0.03108394240554624
+lr_even_odd,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_lr,price,401,12.442642836505629,12.442646395566044,-3.55906041527021e-06
+fd_theta_vs_tgrid,european,call|K=100|D=1|v=0.3|r=0.05|q=0.03,ql_fd,theta,100,-204.25031297608302,-115.28748569430026,-88.96282728178276
+fd_gamma_vs_xgrid,european,call|K=100|D=1|v=0.3|r=0.05|q=0.03,ql_fd,gamma,100,0.2541583899944881,0.2540221687282294,0.0001362212662586737
+fd_gamma_vs_xgrid,european,call|K=100|D=1|v=0.3|r=0.05|q=0.03,ql_fd_damped,gamma,100,0.2541595691525602,0.2540221687282294,0.00013740042433080246
+fd_theta_vs_tgrid,european,call|K=100|D=1|v=0.3|r=0.05|q=0.03,ql_fd,theta,400,-209.18207973441577,-115.28748569430026,-93.8945940401155
+fd_gamma_vs_xgrid,european,call|K=100|D=1|v=0.3|r=0.05|q=0.03,ql_fd,gamma,400,0.2540303344112324,0.2540221687282294,8.16568300299192e-06
+fd_gamma_vs_xgrid,european,call|K=100|D=1|v=0.3|r=0.05|q=0.03,ql_fd_damped,gamma,400,0.2540315124953873,0.2540221687282294,9.343767157887761e-06
+fd_theta_one_day,european,call|K=100|D=1|v=0.3|r=0.05|q=0.03,ql_fd,theta,1600,-208.94121407050486,-208.8404093546383,-0.10080471586655904
+fd_theta_vs_tgrid,european,call|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_fd,theta,100,-45.787812949940985,-44.10673400074801,-1.6810789491929725
+fd_gamma_vs_xgrid,european,call|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_fd,gamma,100,0.09598095960297193,0.0959269986731739,5.396092979802203e-05
+fd_gamma_vs_xgrid,european,call|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_fd_damped,gamma,100,0.0959814053144598,0.0959269986731739,5.440664128589234e-05
+fd_theta_vs_tgrid,european,call|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_fd,theta,400,-45.75829582951229,-44.10673400074801,-1.6515618287642795
+fd_gamma_vs_xgrid,european,call|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_fd,gamma,400,0.09593026817674326,0.0959269986731739,3.2695035693530716e-06
+fd_gamma_vs_xgrid,european,call|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_fd_damped,gamma,400,0.09593071348127538,0.0959269986731739,3.7148081014765078e-06
+fd_theta_one_day,european,call|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_fd,theta,1600,-45.7571343589732,-45.75705728279964,-7.70761735537917e-05
+fd_theta_vs_tgrid,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd,theta,100,-6.572147015243958,-6.187329488131121,-0.3848175271128369
+fd_gamma_vs_xgrid,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd,gamma,100,0.012617912909870833,0.012605675409791123,1.2237500079710292e-05
+fd_gamma_vs_xgrid,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd_damped,gamma,100,0.012617975809019622,0.012605675409791123,1.2300399228499029e-05
+fd_theta_vs_tgrid,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd,theta,400,-6.192264000341604,-6.187329488131121,-0.004934512210482467
+fd_gamma_vs_xgrid,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd,gamma,400,0.012606623446825256,0.012605675409791123,9.4803703413332e-07
+fd_gamma_vs_xgrid,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd_damped,gamma,400,0.012606686291432658,0.012605675409791123,1.0108816415350247e-06
+fd_theta_one_day,european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd,theta,1600,-6.191967238544891,-6.19194775911027,-1.947943462177193e-05
+crr_barrier_in_out,barrier,down-and-out|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,in_out_residual,500,13.014660734724409,13.01445844614746,0.00020228857694881697
+crr_barrier_knock_out,barrier,down-and-out|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,price,500,8.509952502498145,8.510761494328012,-0.0008089918298672671
+crr_barrier_in_out,barrier,down-and-out|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,in_out_residual,1000,13.022657724922027,13.017369493477153,0.005288231444874114
+crr_barrier_knock_out,barrier,down-and-out|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,price,1000,8.511597169231733,8.510761494328012,0.0008356749037208289
+crr_barrier_in_out,barrier,up-and-out|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,in_out_residual,500,10.118816191870089,10.117599726725155,0.001216465144933565
+crr_barrier_knock_out,barrier,up-and-out|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,price,500,5.997504997628831,5.998018807211295,-0.0005138095824639421
+crr_barrier_in_out,barrier,up-and-out|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,in_out_residual,1000,10.120953421447979,10.120477694020355,0.0004757274276236956
+crr_barrier_knock_out,barrier,up-and-out|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,price,1000,5.9976485068946745,5.998018807211295,-0.0003703003166206642
+crr_barrier_in_out,barrier,down-and-out|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,in_out_residual,500,13.019116471452016,13.01445844614746,0.004658025304555835
+crr_barrier_knock_out,barrier,down-and-out|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,price,500,0.38966197940953873,0.11275487071250723,0.2769071086970315
+crr_barrier_in_out,barrier,down-and-out|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,in_out_residual,1000,13.019698855570205,13.017369493477153,0.002329362093052012
+crr_barrier_knock_out,barrier,down-and-out|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,price,1000,0.29311018938467465,0.11275487071250723,0.18035531867216742
+digital_strike_alignment,digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,own_pde_aligned_smoothed,price,100,0.44399380351960105,0.4440274727960491,-3.366927644804507e-05
+digital_strike_alignment,digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,own_pde_unaligned_pointwise,price,100,0.41428517345625493,0.4440274727960491,-0.029742299339794165
+digital_strike_alignment,digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd,price,100,0.44397357659980297,0.4440274727960491,-5.389619624612818e-05
+digital_strike_alignment,digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,own_pde_aligned_smoothed,price,400,0.4440253265881522,0.4440274727960491,-2.1462078969025633e-06
+digital_strike_alignment,digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,own_pde_unaligned_pointwise,price,400,0.44520420138449746,0.4440274727960491,0.0011767285884483614
+digital_strike_alignment,digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd,price,400,0.4440406595157158,0.4440274727960491,1.3186719666713476e-05
