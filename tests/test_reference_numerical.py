@@ -67,8 +67,9 @@ def test_pde_knock_out_second_order(p):
     H, opt, kind = p["barrier"], p["option"], p["barrier_type"]
     ref = cf.barrier(S, K, H, T, r, q, v, opt, kind)
     nodes = CONV["pde_nodes"]
-    errors = [pde.knock_out(S, K, H, T, r, q, v, opt, kind.startswith("down"), n, n).value - ref for n in nodes]
-    _assert_second_order(nodes, errors, ref, "barrier")
+    runs = [pde.knock_out(S, K, H, T, r, q, v, opt, kind.startswith("down"), n, n) for n in nodes]
+    # Order is fitted on the node counts actually used (strike alignment adjusts them).
+    _assert_second_order([x.nodes for x in runs], [x.value - ref for x in runs], ref, "barrier")
 
 
 def test_pde_misaligned_strike_loses_order():
@@ -177,3 +178,61 @@ def test_american_reference_degenerate_zero_rates(option, K):
     S, T, v = 100.0, 7 / 365, 0.1
     value, _ = _ref_pde(S, K, T, 0.0, 0.0, v, option)
     assert abs(value - cf.european(S, K, T, 0.0, 0.0, v, option)) <= spec.tolerance("numerical", value, "american")
+
+
+# Points where an earlier version of the penalty iteration failed to terminate
+# (independent review of the references): r = q = 0, deep in the money short-dated
+# calls, long-dated high-vol puts, negative rates.
+REGRESSION_AMERICAN = [
+    ("put", 100.0, 7, 0.3, 0.0, 0.0), ("call", 50.0, 1, 0.01, 0.05, 0.03), ("call", 50.0, 1, 0.3, 0.05, 0.03),
+    ("put", 50.0, 3650, 1.0, 0.0, 0.03), ("put", 200.0, 3650, 1.0, 0.0, 0.03), ("call", 100.0, 365, 0.3, -0.02, 0.0),
+]
+
+
+@pytest.mark.parametrize("option,K,D,v,r,q", REGRESSION_AMERICAN)
+def test_american_reference_regression_points(option, K, D, v, r, q):
+    value, u = _ref_pde(100.0, K, D / 365, r, q, v, option)
+    euro = cf.european(100.0, K, D / 365, r, q, v, option)
+    assert math.isfinite(value) and value >= euro - spec.tolerance("numerical", value, "american")
+
+
+def test_pde_call_long_dated_high_vol():
+    """Calls go through put-call symmetry; the log-forward grid error for S-linear
+    payoffs at large sigma^2 T (independent review) must not appear."""
+    a = (100.0, 50.0, 10.0, -0.02, 0.0, 1.0, "call")
+    assert abs(pde.vanilla(*a, 400, 400).value - cf.european(*a)) <= spec.tolerance("numerical", cf.european(*a))
+
+
+# Barrier cases using the B and D terms of the closed form (strike on the other side of the barrier).
+BD_POINTS = [
+    ("down-and-out", "call", 95.0, 90.0), ("up-and-out", "put", 105.0, 110.0),
+    ("down-and-out", "put", 90.0, 95.0), ("up-and-out", "call", 110.0, 105.0),
+]
+
+
+@pytest.mark.parametrize("kind,opt,H,K", BD_POINTS)
+def test_closed_form_barrier_b_d_terms_against_pde(kind, opt, H, K):
+    S, T, r, q, v = 100.0, 1.0, 0.05, 0.02, 0.3
+    ref = cf.barrier(S, K, H, T, r, q, v, opt, kind)
+    nodes = CONV["pde_nodes"]
+    runs = [pde.knock_out(S, K, H, T, r, q, v, opt, kind.startswith("down"), n, n) for n in nodes]
+    # Order is fitted on the node counts actually used (strike alignment adjusts them).
+    _assert_second_order([x.nodes for x in runs], [x.value - ref for x in runs], ref, "barrier")
+
+
+@pytest.mark.parametrize("kind,opt,H,K", BD_POINTS)
+def test_closed_form_barrier_b_d_terms_against_mc(kind, opt, H, K):
+    S, T, r, q, v = 100.0, 1.0, 0.05, 0.02, 0.3
+    for k in (kind, kind.replace("-out", "-in")):
+        ref = cf.barrier(S, K, H, T, r, q, v, opt, k)
+        x = mc.barrier(S, K, H, T, r, q, v, opt, k, 65536, spec.seed_for("barrier", f"bd|{k}|{opt}|{H}|{K}", "own_mc"),
+                       365)
+        assert abs(x.value - ref) <= 4.0 * x.std_error
+
+
+def test_american_long_maturity_against_extrapolated_tree():
+    """Long maturity: compare with Richardson-extrapolated CRR (2 V(2N) - V(N), averaged trees)."""
+    a = (100.0, 105.0, 10.0, 0.05, 0.0, 0.1, "put")
+    value, _ = _ref_pde(*a)
+    rich = 2 * tree.crr_averaged(*a, 12800, american=True) - tree.crr_averaged(*a, 6400, american=True)
+    assert abs(value - rich) <= spec.tolerance("numerical", value, "american")

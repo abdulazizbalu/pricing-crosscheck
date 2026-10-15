@@ -168,7 +168,7 @@ def test_barrier_limits(option, down):
 
 def test_worthless_barriers():
     S, T, r, q, v = 100.0, 1.0, 0.05, 0.02, 0.3
-    assert cf.barrier(S, 100.0, 110.0, T, r, q, v, "call", "up-and-out") >= 0  # H > K: alive
+    assert cf.barrier(S, 100.0, 110.0, T, r, q, v, "call", "up-and-out") > 0  # H > K: alive
     assert cf.barrier(S, 115.0, 110.0, T, r, q, v, "call", "up-and-out") == 0.0
     assert cf.barrier(S, 85.0, 90.0, T, r, q, v, "put", "down-and-out") == 0.0
 

@@ -196,9 +196,23 @@ def vanilla(
     align_strike: bool = True,
     smooth_payoff: bool = True,
 ) -> PdeResult:
-    """European/American vanilla or European cash-or-nothing digital (pays 1)."""
+    """European/American vanilla or European cash-or-nothing digital (pays 1).
+
+    Calls are priced through put-call symmetry, C(S, K, r, q) = P(K, S, q, r),
+    which holds for European and American options under Black-Scholes-Merton.
+    On the log-forward grid the S-linear part of a call is propagated with an
+    error that grows with sigma^2 T; the bounded put payoff avoids it. A digital
+    call is exp(-rT) minus the digital put.
+    """
     if american and payoff == "digital":
         raise ValueError("American digital is out of scope")
+    if option == "call" and payoff == "vanilla":
+        return vanilla(K, S, T, q, r, sigma, "put", nodes, steps, rannacher_steps, american,
+                       payoff, align_strike, smooth_payoff)
+    if option == "call" and payoff == "digital":
+        put = vanilla(S, K, T, r, q, sigma, "put", nodes, steps, rannacher_steps, False,
+                      payoff, align_strike, smooth_payoff)
+        return PdeResult(math.exp(-r * T) - put.value, put.nodes, put.steps, put.penalty_iterations)
     m = r - q - 0.5 * sigma * sigma
     y0 = math.log(S) + m * T
     width = N_SD * sigma * math.sqrt(T)
@@ -256,12 +270,14 @@ def knock_out(
     lo, hi = (h, far) if down else (far, h)
     k = math.log(K)
     dx = (hi - lo) / (nodes - 1)
-    if lo < k < hi:
-        # keep the barrier on the boundary node and put the strike on a node too
-        cells = max(1, round(abs(k - h) / dx))
+    if lo < k < hi and abs(k - h) >= dx:
+        # keep the barrier on the boundary node and put the strike on a node too,
+        # with spacing at most the target spacing and about ``nodes`` nodes
+        cells = math.ceil(abs(k - h) / dx)
         dx = abs(k - h) / cells
-        count = max(nodes, int(math.ceil((hi - lo) / dx)) + 1)
+        count = int(math.ceil((hi - lo) / dx)) + 1
     else:
+        # strike within one cell of the barrier (or outside): rely on cell averaging
         count = nodes
     x = (h + dx * np.arange(count)) if down else (h - dx * np.arange(count))[::-1]
     v0 = _cell_average(x, dx, K, option, "vanilla")
