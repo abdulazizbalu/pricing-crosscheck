@@ -1,0 +1,660 @@
+{
+  "protocol_version": "1.0",
+  "model": "black_scholes_merton",
+  "market": {
+    "valuation_date": "2025-01-15",
+    "spot": 100.0,
+    "day_count": "Actual/365 Fixed",
+    "compounding": "continuous",
+    "calendar": "none"
+  },
+  "grids": {
+    "vanilla": {
+      "strike": [
+        50.0,
+        80.0,
+        95.0,
+        100.0,
+        105.0,
+        120.0,
+        200.0
+      ],
+      "days": [
+        1,
+        7,
+        91,
+        365,
+        3650
+      ],
+      "vol": [
+        0.01,
+        0.1,
+        0.3,
+        1.0
+      ],
+      "rate": [
+        -0.02,
+        0.0,
+        0.05
+      ],
+      "div": [
+        0.0,
+        0.03
+      ]
+    },
+    "barrier": {
+      "barrier_down": [
+        70.0,
+        90.0,
+        99.0,
+        99.9
+      ],
+      "barrier_up": [
+        100.1,
+        101.0,
+        110.0,
+        130.0
+      ],
+      "strike": [
+        90.0,
+        100.0,
+        110.0
+      ],
+      "days": [
+        30,
+        365,
+        1825
+      ],
+      "vol": [
+        0.1,
+        0.3
+      ],
+      "rate_div": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          0.02
+        ],
+        [
+          -0.01,
+          0.0
+        ]
+      ]
+    },
+    "american_mc_subset": {
+      "strike": [
+        80.0,
+        100.0,
+        120.0
+      ],
+      "days": [
+        91,
+        365
+      ],
+      "vol": [
+        0.3
+      ],
+      "rate": [
+        0.05
+      ],
+      "div": [
+        0.0,
+        0.03
+      ]
+    },
+    "barrier_mc_subset": {
+      "barrier_down": [
+        70.0,
+        90.0,
+        99.0,
+        99.9
+      ],
+      "barrier_up": [
+        100.1,
+        101.0,
+        110.0,
+        130.0
+      ],
+      "strike": [
+        100.0
+      ],
+      "days": [
+        30,
+        365
+      ],
+      "vol": [
+        0.3
+      ],
+      "rate_div": [
+        [
+          0.05,
+          0.02
+        ]
+      ]
+    }
+  },
+  "profiles": {
+    "full": {},
+    "fast": {
+      "vanilla": {
+        "strike": [
+          80.0,
+          100.0,
+          120.0
+        ],
+        "days": [
+          7,
+          365
+        ],
+        "vol": [
+          0.1,
+          0.3
+        ],
+        "rate": [
+          0.0,
+          0.05
+        ],
+        "div": [
+          0.0,
+          0.03
+        ]
+      },
+      "barrier": {
+        "barrier_down": [
+          90.0,
+          99.9
+        ],
+        "barrier_up": [
+          100.1,
+          110.0
+        ],
+        "strike": [
+          100.0
+        ],
+        "days": [
+          30,
+          365
+        ],
+        "vol": [
+          0.3
+        ],
+        "rate_div": [
+          [
+            0.05,
+            0.02
+          ]
+        ]
+      },
+      "american_mc_subset": {
+        "strike": [
+          100.0
+        ],
+        "days": [
+          91
+        ],
+        "vol": [
+          0.3
+        ],
+        "rate": [
+          0.05
+        ],
+        "div": [
+          0.0
+        ]
+      },
+      "barrier_mc_subset": {
+        "barrier_down": [
+          90.0
+        ],
+        "barrier_up": [
+          110.0
+        ],
+        "strike": [
+          100.0
+        ],
+        "days": [
+          30
+        ],
+        "vol": [
+          0.3
+        ],
+        "rate_div": [
+          [
+            0.05,
+            0.02
+          ]
+        ]
+      }
+    }
+  },
+  "engines": {
+    "european": {
+      "cf": {
+        "role": "reference"
+      },
+      "ql_analytic": {
+        "class": "AnalyticEuropeanEngine"
+      },
+      "ql_crr": {
+        "class": "BinomialCRRVanillaEngine",
+        "steps": 1000
+      },
+      "ql_lr": {
+        "class": "BinomialLRVanillaEngine",
+        "steps": 1001,
+        "note": "QuantLib's LR tree uses an odd number of steps (even counts are increased by one)"
+      },
+      "ql_fd": {
+        "class": "FdBlackScholesVanillaEngine",
+        "tGrid": 400,
+        "xGrid": 400,
+        "dampingSteps": 0
+      },
+      "ql_fd_damped": {
+        "class": "FdBlackScholesVanillaEngine",
+        "tGrid": 400,
+        "xGrid": 400,
+        "dampingSteps": 2
+      },
+      "ql_mc": {
+        "class": "MCEuropeanEngine",
+        "rng": "pseudorandom",
+        "timeSteps": 1,
+        "antithetic": true,
+        "samples": 131072,
+        "samples_unit": "QuantLib: requiredSamples as defined by QuantLib; own_mc: simulated paths (antithetic pairs = samples / 2)"
+      },
+      "own_crr": {
+        "steps": 1000
+      },
+      "own_pde": {
+        "space_nodes": 400,
+        "time_steps": 400,
+        "rannacher_steps": 2
+      },
+      "own_mc": {
+        "samples": 131072,
+        "antithetic": true,
+        "samples_unit": "QuantLib: requiredSamples as defined by QuantLib; own_mc: simulated paths (antithetic pairs = samples / 2)"
+      }
+    },
+    "american": {
+      "ref_pde": {
+        "role": "reference",
+        "levels": [
+          [
+            800,
+            400
+          ],
+          [
+            1600,
+            800
+          ],
+          [
+            3200,
+            1600
+          ]
+        ],
+        "rannacher_steps": 2
+      },
+      "ql_baw": {
+        "class": "BaroneAdesiWhaleyApproximationEngine"
+      },
+      "ql_bjs": {
+        "class": "BjerksundStenslandApproximationEngine"
+      },
+      "ql_qdfp": {
+        "class": "QdFpAmericanEngine",
+        "scheme": "highPrecisionScheme"
+      },
+      "ql_crr": {
+        "class": "BinomialCRRVanillaEngine",
+        "steps": 1000
+      },
+      "ql_fd": {
+        "class": "FdBlackScholesVanillaEngine",
+        "tGrid": 400,
+        "xGrid": 400,
+        "dampingSteps": 0
+      },
+      "ql_fd_damped": {
+        "class": "FdBlackScholesVanillaEngine",
+        "tGrid": 400,
+        "xGrid": 400,
+        "dampingSteps": 2
+      },
+      "ql_mc_lsm": {
+        "class": "MCAmericanEngine",
+        "rng": "pseudorandom",
+        "timeSteps": 50,
+        "antithetic": true,
+        "samples": 32768,
+        "calibrationSamples": 4096,
+        "polynomOrder": 3,
+        "polynomType": "Monomial",
+        "grid": "american_mc_subset",
+        "note": "prices a Bermudan option with timeSteps exercise dates; LSM regression estimate",
+        "samples_unit": "QuantLib: requiredSamples as defined by QuantLib; own_mc: simulated paths (antithetic pairs = samples / 2)"
+      },
+      "own_crr": {
+        "steps": 1000
+      }
+    },
+    "barrier": {
+      "cf": {
+        "role": "reference"
+      },
+      "ql_analytic": {
+        "class": "AnalyticBarrierEngine"
+      },
+      "ql_crr": {
+        "class": "BinomialCRRBarrierEngine",
+        "steps": 1000,
+        "note": "QuantLib may adjust the step count (Boyle-Lau) and applies Derman-Kani"
+      },
+      "ql_fd": {
+        "class": "FdBlackScholesBarrierEngine",
+        "tGrid": 400,
+        "xGrid": 400,
+        "dampingSteps": 0
+      },
+      "ql_mc": {
+        "class": "MCBarrierEngine",
+        "rng": "pseudorandom",
+        "steps_per_day": 1,
+        "antithetic": true,
+        "samples": 65536,
+        "grid": "barrier_mc_subset",
+        "brownianBridge": false,
+        "isBiased": false,
+        "note": "isBiased=false selects the crossing-probability (continuous monitoring) path pricer; brownianBridge only controls path construction",
+        "samples_unit": "QuantLib: requiredSamples as defined by QuantLib; own_mc: simulated paths (antithetic pairs = samples / 2)"
+      },
+      "own_pde": {
+        "space_nodes": 400,
+        "time_steps": 400,
+        "rannacher_steps": 2,
+        "types": "knock-out"
+      },
+      "own_mc": {
+        "steps_per_day": 1,
+        "bridge_correction": true,
+        "samples": 65536,
+        "antithetic": true,
+        "grid": "barrier_mc_subset",
+        "samples_unit": "QuantLib: requiredSamples as defined by QuantLib; own_mc: simulated paths (antithetic pairs = samples / 2)"
+      }
+    },
+    "digital": {
+      "cf": {
+        "role": "reference"
+      },
+      "ql_analytic": {
+        "class": "AnalyticEuropeanEngine"
+      },
+      "ql_fd": {
+        "class": "FdBlackScholesVanillaEngine",
+        "tGrid": 400,
+        "xGrid": 400,
+        "dampingSteps": 0
+      },
+      "ql_fd_damped": {
+        "class": "FdBlackScholesVanillaEngine",
+        "tGrid": 400,
+        "xGrid": 400,
+        "dampingSteps": 2
+      },
+      "ql_crr": {
+        "class": "BinomialCRRVanillaEngine",
+        "steps": 1000,
+        "expected": "rejects non-plain payoff"
+      },
+      "ql_mc": {
+        "class": "MCEuropeanEngine",
+        "samples": 131072,
+        "expected": "rejects non-plain payoff",
+        "samples_unit": "QuantLib: requiredSamples as defined by QuantLib; own_mc: simulated paths (antithetic pairs = samples / 2)"
+      },
+      "own_pde": {
+        "space_nodes": 400,
+        "time_steps": 400,
+        "rannacher_steps": 2
+      },
+      "own_mc": {
+        "samples": 131072,
+        "antithetic": true,
+        "samples_unit": "QuantLib: requiredSamples as defined by QuantLib; own_mc: simulated paths (antithetic pairs = samples / 2)"
+      }
+    }
+  },
+  "tolerances": {
+    "exact": {
+      "abs": 1e-09,
+      "rel": 1e-09
+    },
+    "numerical": {
+      "abs_per_unit_notional": 1e-05,
+      "rel": 0.0001
+    },
+    "notional": {
+      "european": 100.0,
+      "american": 100.0,
+      "barrier": 100.0,
+      "digital": 1.0
+    },
+    "mc_sigmas": 4.0,
+    "reference_uncertainty_fraction": 0.1,
+    "greeks": {
+      "rel": 0.001,
+      "abs_per_unit_notional": {
+        "delta": 1e-06,
+        "gamma": 1e-07,
+        "vega": 1e-05,
+        "theta": 1e-05
+      },
+      "analytic_vs_analytic": "exact"
+    }
+  },
+  "greeks": {
+    "instruments": [
+      "european",
+      "digital"
+    ],
+    "bumps": {
+      "desk": {
+        "spot_rel": 0.01,
+        "vol_abs": 0.01,
+        "time_days": 1,
+        "scheme": "central spot and vol; one-sided one-day theta"
+      },
+      "fine": {
+        "spot_rel": 0.0001,
+        "vol_abs": 0.0001,
+        "time_rel": 0.0001,
+        "scheme": "central"
+      }
+    },
+    "sweep_eps": [
+      0.1,
+      0.01,
+      0.001,
+      0.0001,
+      1e-05,
+      1e-06,
+      1e-07,
+      1e-08
+    ],
+    "sweep_points": [
+      {
+        "id": "atm_1y",
+        "strike": 100.0,
+        "days": 365,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.03
+      },
+      {
+        "id": "atm_7d",
+        "strike": 100.0,
+        "days": 7,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.03
+      },
+      {
+        "id": "otm_91d",
+        "strike": 120.0,
+        "days": 91,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.0
+      }
+    ]
+  },
+  "convergence": {
+    "points": [
+      {
+        "id": "atm_1y",
+        "strike": 100.0,
+        "days": 365,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.03
+      },
+      {
+        "id": "otm_91d",
+        "strike": 120.0,
+        "days": 91,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.0
+      },
+      {
+        "id": "atm_7d",
+        "strike": 100.0,
+        "days": 7,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.03
+      }
+    ],
+    "barrier_points": [
+      {
+        "id": "do_call_90",
+        "barrier_type": "down-and-out",
+        "option": "call",
+        "barrier": 90.0,
+        "strike": 100.0,
+        "days": 365,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.02
+      },
+      {
+        "id": "uo_put_110",
+        "barrier_type": "up-and-out",
+        "option": "put",
+        "barrier": 110.0,
+        "strike": 100.0,
+        "days": 365,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.02
+      },
+      {
+        "id": "do_call_99.9",
+        "barrier_type": "down-and-out",
+        "option": "call",
+        "barrier": 99.9,
+        "strike": 100.0,
+        "days": 365,
+        "vol": 0.3,
+        "rate": 0.05,
+        "div": 0.02
+      }
+    ],
+    "tree_steps": [
+      25,
+      50,
+      100,
+      200,
+      400,
+      800,
+      1600,
+      3200,
+      6400
+    ],
+    "pde_nodes": [
+      25,
+      50,
+      100,
+      200,
+      400,
+      800,
+      1600
+    ],
+    "mc_samples_log2": [
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "mc_monitoring_steps_per_year": [
+      12,
+      52,
+      365,
+      1460
+    ],
+    "fit_last_levels": 5,
+    "floor_rel": 1e-08,
+    "min_levels": 3
+  },
+  "refinement": {
+    "factors": [
+      2,
+      4
+    ],
+    "mc_sample_factors": [
+      4,
+      16
+    ],
+    "lsm_time_step_factors": [
+      2,
+      4
+    ],
+    "mc_barrier_monitoring_factors": [
+      4,
+      16
+    ],
+    "min_local_order": 0.5
+  },
+  "seeds": {
+    "base": 20250115,
+    "derivation": "sha256('base|instrument|point_id|engine|run') -> first 4 bytes as unsigned int, mod 2147483646, plus 1; run names the sample count, monitoring frequency and refinement level"
+  },
+  "labels": {
+    "near_expiry_max_days": 7,
+    "near_zero_vol_max": 0.01,
+    "near_barrier_max_rel_distance": 0.0101,
+    "deep_moneyness_min_sd": 3.0
+  },
+  "validation": {
+    "crr_min_order": 0.8,
+    "crr_scaled_error_factor": 2.0,
+    "pde_order_range": [
+      1.8,
+      2.2
+    ],
+    "mc_se_slope_range": [
+      -0.55,
+      -0.45
+    ],
+    "fallback_min_resolution": 100,
+    "control_max_order_unaligned_digital": 1.5
+  }
+}
