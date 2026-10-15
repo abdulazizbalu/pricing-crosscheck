@@ -1,5 +1,5 @@
 # profile: fast
-# content_hash: c7656d6d1da94fe7633ec0f51fdbee84afe673f996c4ba00822a042c28df97ac
+# content_hash: 05ed888a3986bba4167094946af9968d5de22d03a6366e7009e388c7b3f91d20
 # python: 3.12.3
 # implementation: CPython
 # platform: linux-x86_64
@@ -1746,777 +1746,777 @@ digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,cf,1.0,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,ql_analytic,0.9999999999999999,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,ql_fd,0.9999999999999987,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,ql_fd_damped,1.0,nan,nan,ok
-digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,own_pde,1.0,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0,call,,,80.0,7,0.1,0.0,0.0,own_mc,1.0,0.0,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,cf,1.0,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,ql_analytic,0.9999999999999999,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,ql_fd,1.0000000000000013,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,ql_fd_damped,0.9999999999999969,nan,nan,ok
-digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,own_pde,1.0,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0|q=0.03,call,,,80.0,7,0.1,0.0,0.03,own_mc,1.0,0.0,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,cf,0.9990415554920403,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,ql_analytic,0.9990415554920402,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,ql_fd,0.999041555492016,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,ql_fd_damped,0.9990415554977079,nan,nan,ok
-digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,own_pde,0.9990415554920403,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0,call,,,80.0,7,0.1,0.05,0.0,own_mc,0.9990415554920401,8.673683555090356e-19,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,cf,0.9990415554920403,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,ql_analytic,0.9990415554920402,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,ql_fd,0.99904155549197,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,ql_fd_damped,0.9990415554976639,nan,nan,ok
-digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,own_pde,0.9990415554920403,nan,nan,ok
 digital,call|K=80|D=7|v=0.1|r=0.05|q=0.03,call,,,80.0,7,0.1,0.05,0.03,own_mc,0.9990415554920401,8.673683555090356e-19,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,cf,0.9999999560941178,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,ql_analytic,0.9999999560941178,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,ql_fd,0.9999999509886467,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,ql_fd_damped,0.9999999509286305,nan,nan,ok
-digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,own_pde,0.9999999535836406,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0,call,,,80.0,7,0.3,0.0,0.0,own_mc,1.0,0.0,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,cf,0.9999999526066637,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,ql_analytic,0.9999999526066639,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,ql_fd,0.9999999477219139,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,ql_fd_damped,0.9999999476580361,nan,nan,ok
-digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,own_pde,0.999999949924192,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0|q=0.03,call,,,80.0,7,0.3,0.0,0.03,own_mc,1.0,0.0,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,cf,0.9990415168907092,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,ql_analytic,0.9990415168907092,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,ql_fd,0.9990415124064411,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,ql_fd_damped,0.9990415123594267,nan,nan,ok
-digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,own_pde,0.999041514641963,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0,call,,,80.0,7,0.3,0.05,0.0,own_mc,0.9990415554920401,8.673683555090356e-19,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,cf,0.9990415138116647,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,ql_analytic,0.9990415138116647,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,ql_fd,0.9990415089821472,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,ql_fd_damped,0.9990415089309146,nan,nan,ok
-digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,own_pde,0.9990415114112442,nan,nan,ok
 digital,call|K=80|D=7|v=0.3|r=0.05|q=0.03,call,,,80.0,7,0.3,0.05,0.03,own_mc,0.9990415554920401,8.673683555090356e-19,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,cf,0.9854243903380423,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,ql_analytic,0.9854243903380422,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,ql_fd,0.9854235929886243,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,ql_fd_damped,0.9854233297641422,nan,nan,ok
-digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,own_pde,0.9854040484215184,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0,call,,,80.0,365,0.1,0.0,0.0,own_mc,0.9853057861328125,0.0003298710941745885,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,cf,0.9700436501107121,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,ql_analytic,0.9700436501107123,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,ql_fd,0.9700425626126173,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,ql_fd_damped,0.9700419856174894,nan,nan,ok
-digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,own_pde,0.9700219035615953,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0|q=0.03,call,,,80.0,365,0.1,0.0,0.03,own_mc,0.969512939453125,0.00046735286304722546,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,cf,0.9477428337369354,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,ql_analytic,0.9477428337369352,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,ql_fd,0.9477445819590774,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,ql_fd_damped,0.9477445659108392,nan,nan,ok
-digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,own_pde,0.9477311790918919,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0,call,,,80.0,365,0.1,0.05,0.0,own_mc,0.9476443160435044,0.0001606937981116188,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,cf,0.9430273013867464,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,ql_analytic,0.9430273013867463,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,ql_fd,0.9430310191312887,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,ql_fd_damped,0.9430309182240579,nan,nan,ok
-digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,own_pde,0.9430106519040626,nan,nan,ok
 digital,call|K=80|D=365|v=0.1|r=0.05|q=0.03,call,,,80.0,365,0.1,0.05,0.03,own_mc,0.9432101029516927,0.00023920335831599545,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,cf,0.7236810146983192,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,ql_analytic,0.7236810146983194,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,ql_fd,0.7236747743278226,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,ql_fd_damped,0.7236757602910705,nan,nan,ok
-digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,own_pde,0.72368987196228,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0,call,,,80.0,365,0.3,0.0,0.0,own_mc,0.7227249145507812,0.000970740552370115,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,cf,0.6892804639142721,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,ql_analytic,0.6892804639142722,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,ql_fd,0.6892659868654268,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,ql_fd_damped,0.6892670752613509,nan,nan,ok
-digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,own_pde,0.6892895084985198,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0|q=0.03,call,,,80.0,365,0.3,0.0,0.03,own_mc,0.6886825561523438,0.0009467404906970305,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,cf,0.7386445760644378,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,ql_analytic,0.7386445760644377,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,ql_fd,0.7386499916845095,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,ql_fd_damped,0.7386508633008849,nan,nan,ok
-digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,own_pde,0.7386509710808202,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0,call,,,80.0,365,0.3,0.05,0.0,own_mc,0.7398241423984663,0.0009231992062737938,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,cf,0.70916683468893,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,ql_analytic,0.70916683468893,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,ql_fd,0.709173101655805,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,ql_fd_damped,0.7091740693269815,nan,nan,ok
-digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,own_pde,0.7091746956667739,nan,nan,ok
 digital,call|K=80|D=365|v=0.3|r=0.05|q=0.03,call,,,80.0,365,0.3,0.05,0.03,own_mc,0.7093652351213247,0.0009288068916768016,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,cf,0.49723764692718575,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,ql_analytic,0.49723764692718575,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,ql_fd,0.497264449260343,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,ql_fd_damped,0.4972644536554773,nan,nan,ok
-digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,own_pde,0.4972374586681665,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0,call,,,100.0,7,0.1,0.0,0.0,own_mc,0.49732208251953125,0.0001425544618621723,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,cf,0.48067094261211496,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,ql_analytic,0.4806709426121132,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,ql_fd,0.48065083872056447,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,ql_fd_damped,0.4806508685579174,nan,nan,ok
-digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,own_pde,0.48066962715138783,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0|q=0.03,call,,,100.0,7,0.1,0.0,0.03,own_mc,0.48032379150390625,0.00037975290555834453,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,cf,0.5243422588168271,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,ql_analytic,0.5243422588168263,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,ql_fd,0.5243643449080445,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,ql_fd_damped,0.5243643063924411,nan,nan,ok
-digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,own_pde,0.524343943785647,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0,call,,,100.0,7,0.1,0.05,0.0,own_mc,0.5236904003386811,0.0004187025052289267,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,cf,0.5077993650533089,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,ql_analytic,0.5077993650533069,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,ql_fd,0.5078203857540358,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,ql_fd_damped,0.5078203730025239,nan,nan,ok
-digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,own_pde,0.5077999295818204,nan,nan,ok
 digital,call|K=100|D=7|v=0.1|r=0.05|q=0.03,call,,,100.0,7,0.1,0.05,0.03,own_mc,0.5079889110479584,0.0002518959692620379,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,cf,0.4917134705140353,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,ql_analytic,0.4917134705140353,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,ql_fd,0.49174012980921517,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,ql_fd_damped,0.491740142747909,nan,nan,ok
-digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,own_pde,0.4917129054579903,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0,call,,,100.0,7,0.3,0.0,0.0,own_mc,0.4918212890625,0.00024774759057835823,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,cf,0.4861908829935805,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,ql_analytic,0.4861908829935799,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,ql_fd,0.48622118229524486,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,ql_fd_damped,0.48622120380264316,nan,nan,ok
-digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,own_pde,0.4861899406084822,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0|q=0.03,call,,,100.0,7,0.3,0.0,0.03,own_mc,0.485748291015625,0.0003250142940606502,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,cf,0.500440686116971,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,ql_analytic,0.5004406861169708,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,ql_fd,0.500480180115396,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,ql_fd_damped,0.5004801788736276,nan,nan,ok
-digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,own_pde,0.5004407488062521,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0,call,,,100.0,7,0.3,0.05,0.0,own_mc,0.5004506717719754,8.411089296766405e-05,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,cf,0.49492133390086296,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,ql_analytic,0.49492133390086224,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,ql_fd,0.49490970036039583,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,ql_fd_damped,0.49490970744797985,nan,nan,ok
-digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,own_pde,0.49492102038913066,nan,nan,ok
 digital,call|K=100|D=7|v=0.3|r=0.05|q=0.03,call,,,100.0,7,0.3,0.05,0.03,own_mc,0.49477984263008346,0.00018919138346409754,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,cf,0.4800611941616275,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,ql_analytic,0.4800611941616275,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,ql_fd,0.4800875342316314,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,ql_fd_damped,0.48008756523529095,nan,nan,ok
-digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,own_pde,0.4800598377693691,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0,call,,,100.0,365,0.1,0.0,0.0,own_mc,0.47972869873046875,0.0003852139553587738,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,cf,0.3631693488243809,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,ql_analytic,0.36316934882438084,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,ql_fd,0.3631794396358749,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,ql_fd_damped,0.363179667643052,nan,nan,ok
-digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,own_pde,0.36316146414948225,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0|q=0.03,call,,,100.0,365,0.1,0.0,0.03,own_mc,0.3631134033203125,0.0008708933034200039,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,cf,0.6407907361234322,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,ql_analytic,0.6407907361234323,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,ql_fd,0.6407840299679393,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,ql_fd_damped,0.6407837051547787,nan,nan,ok
-digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,own_pde,0.640799186574565,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0,call,,,100.0,365,0.1,0.05,0.0,own_mc,0.6413570340028846,0.0008852613396057497,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,cf,0.5323248154537634,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,ql_analytic,0.5323248154537641,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,ql_fd,0.5323486848815546,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,ql_fd_damped,0.5323485868368328,nan,nan,ok
-digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,own_pde,0.5323285754908431,nan,nan,ok
 digital,call|K=100|D=365|v=0.1|r=0.05|q=0.03,call,,,100.0,365,0.1,0.05,0.03,own_mc,0.5322652317179212,0.0006018021707688549,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,cf,0.4403823076297575,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,ql_analytic,0.4403823076297575,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,ql_fd,0.44040737079384795,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,ql_fd_damped,0.4404074644643835,nan,nan,ok
-digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,own_pde,0.44037835708923234,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0,call,,,100.0,365,0.3,0.0,0.0,own_mc,0.44054412841796875,0.0006322013687250182,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,cf,0.4012936743170763,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,ql_analytic,0.40129367431707624,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,ql_fd,0.4012740567986072,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,ql_fd_damped,0.40127421551741516,nan,nan,ok
-digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,own_pde,0.40128748037674844,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0|q=0.03,call,,,100.0,365,0.3,0.0,0.03,own_mc,0.4013519287109375,0.0007772671701809763,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,cf,0.48193918004615427,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,ql_analytic,0.4819391800461542,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,ql_fd,0.4819368560070353,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,ql_fd_damped,0.4819368517137119,nan,nan,ok
-digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,own_pde,0.4819396081885144,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0,call,,,100.0,365,0.3,0.05,0.0,own_mc,0.48215354366725105,0.0002163390756632406,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,cf,0.4440274727960491,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,ql_analytic,0.44402747279604926,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,ql_fd,0.4440406595157158,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,ql_fd_damped,0.44404072526477906,nan,nan,ok
-digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,own_pde,0.4440253265881522,nan,nan,ok
 digital,call|K=100|D=365|v=0.3|r=0.05|q=0.03,call,,,100.0,365,0.3,0.05,0.03,own_mc,0.44395834971928916,0.0004630895359697597,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,cf,6.328414778860944e-40,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,ql_analytic,6.328414778861396e-40,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,ql_fd,0.0,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,ql_fd_damped,0.0,nan,nan,ok
-digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,own_pde,2.7755575615628914e-15,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0,call,,,120.0,7,0.1,0.0,0.0,own_mc,0.0,0.0,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,cf,3.646692458200106e-40,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,ql_analytic,3.6466924581995347e-40,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,ql_fd,0.0,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,ql_fd_damped,0.0,nan,nan,ok
-digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,own_pde,2.7755575615628914e-15,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0|q=0.03,call,,,120.0,7,0.1,0.0,0.03,own_mc,0.0,0.0,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,cf,1.5783924462009345e-39,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,ql_analytic,1.5783924462010027e-39,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,ql_fd,0.0,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,ql_fd_damped,0.0,nan,nan,ok
-digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,own_pde,-2.8653746042550665e-12,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0,call,,,120.0,7,0.1,0.05,0.0,own_mc,0.0,0.0,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,cf,9.121401234691998e-40,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,ql_analytic,9.121401234691086e-40,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,ql_fd,0.0,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,ql_fd_damped,0.0,nan,nan,ok
-digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,own_pde,-2.8653746042550665e-12,nan,nan,ok
 digital,call|K=120|D=7|v=0.1|r=0.05|q=0.03,call,,,120.0,7,0.1,0.05,0.03,own_mc,0.0,0.0,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,cf,5.186382407317089e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,ql_analytic,5.186382407318391e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,ql_fd,5.23087321484707e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,ql_fd_damped,5.233517762914719e-06,nan,nan,ok
-digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,own_pde,5.320142017928298e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0,call,,,120.0,7,0.3,0.0,0.0,own_mc,7.62939453125e-06,7.62939453125e-06,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,cf,4.864693673215287e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,ql_analytic,4.864693673223286e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,ql_fd,4.904348733430411e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,ql_fd_damped,4.906826572190603e-06,nan,nan,ok
-digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,own_pde,4.991713682955812e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0|q=0.03,call,,,120.0,7,0.3,0.0,0.03,own_mc,0.0,0.0,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,cf,5.762604657819766e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,ql_analytic,5.762604657846757e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,ql_fd,5.812120901067763e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,ql_fd_damped,5.815061896788709e-06,nan,nan,ok
-digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,own_pde,5.907972795093919e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0,call,,,120.0,7,0.3,0.05,0.0,own_mc,0.0,0.0,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,cf,5.4068339138035346e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,ql_analytic,5.406833913817048e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,ql_fd,5.451259034396195e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,ql_fd_damped,5.454015972003405e-06,nan,nan,ok
-digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,own_pde,5.545013216812222e-06,nan,nan,ok
 digital,call|K=120|D=7|v=0.3|r=0.05|q=0.03,call,,,120.0,7,0.3,0.05,0.03,own_mc,1.5244164359924932e-05,1.0779169751690384e-05,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,cf,0.030519311704850196,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,ql_analytic,0.03051931170485017,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,ql_fd,0.03052123299092297,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,ql_fd_damped,0.030521282972392774,nan,nan,ok
-digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,own_pde,0.03054102848927942,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0,call,,,120.0,365,0.1,0.0,0.0,own_mc,0.03003692626953125,0.0004641121737137904,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,cf,0.0148820483097576,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,ql_analytic,0.01488204830975759,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,ql_fd,0.01488054534780485,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,ql_fd_damped,0.0148805218164845,nan,nan,ok
-digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,own_pde,0.014902484685466733,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0|q=0.03,call,,,120.0,365,0.1,0.0,0.03,own_mc,0.014801025390625,0.00033103139723763425,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,cf,0.080704844805134,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,ql_analytic,0.080704844805134,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,ql_fd,0.08069804954621151,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,ql_fd_damped,0.0806982153399917,nan,nan,ok
-digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,own_pde,0.08071669742508125,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0,call,,,120.0,365,0.1,0.05,0.0,own_mc,0.07919896476422342,0.000692147332852755,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,cf,0.044843269747472284,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,ql_analytic,0.04484326974747235,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,ql_fd,0.04484726039127827,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,ql_fd_damped,0.04484733319892206,nan,nan,ok
-digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,own_pde,0.04486205357711215,nan,nan,ok
 digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,call,,,120.0,365,0.1,0.05,0.03,own_mc,0.04479934110597922,0.0005426811748069304,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,cf,0.22430376620739462,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,ql_analytic,0.22430376620739462,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,ql_fd,0.2243135390689477,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,ql_fd_damped,0.224312838277662,nan,nan,ok
-digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,own_pde,0.2242970200740666,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0,call,,,120.0,365,0.3,0.0,0.0,own_mc,0.22332000732421875,0.0009709928737734908,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,cf,0.19551843166022154,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,ql_analytic,0.19551843166022148,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,ql_fd,0.1955064276005432,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,ql_fd_damped,0.19550580291485722,nan,nan,ok
-digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,own_pde,0.19551398099647543,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0|q=0.03,call,,,120.0,365,0.3,0.0,0.03,own_mc,0.1952056884765625,0.0009528247101527119,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,cf,0.26371517212966455,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,ql_analytic,0.2637151721296645,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,ql_fd,0.2637094520506513,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,ql_fd_damped,0.26370860183412914,nan,nan,ok
-digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,own_pde,0.26370671107565113,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0,call,,,120.0,365,0.3,0.05,0.0,own_mc,0.2627797411479672,0.0009238060088448714,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,cf,0.2328230974186794,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,ql_analytic,0.2328230974186795,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,ql_fd,0.23281708580166,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,ql_fd_damped,0.23281632497493976,nan,nan,ok
-digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,own_pde,0.23281559740266733,nan,nan,ok
 digital,call|K=120|D=365|v=0.3|r=0.05|q=0.03,call,,,120.0,365,0.3,0.05,0.03,own_mc,0.2322555181297024,0.0009286888854930331,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,cf,1.1525041290014728e-58,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,ql_analytic,1.1102230246251565e-16,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,ql_fd,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,ql_fd_damped,0.0,nan,nan,ok
-digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,own_pde,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0,put,,,80.0,7,0.1,0.0,0.0,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,cf,2.2541664306624682e-58,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,ql_analytic,1.1102230246251565e-16,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,ql_fd,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,ql_fd_damped,0.0,nan,nan,ok
-digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,own_pde,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0|q=0.03,put,,,80.0,7,0.1,0.0,0.03,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,cf,3.749678621820364e-59,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,ql_analytic,1.1091589374645942e-16,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,ql_fd,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,ql_fd_damped,0.0,nan,nan,ok
-digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,own_pde,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0,put,,,80.0,7,0.1,0.05,0.0,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,cf,7.354991492949068e-59,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,ql_analytic,1.1091589374645942e-16,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,ql_fd,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,ql_fd_damped,0.0,nan,nan,ok
-digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,own_pde,0.0,nan,nan,ok
 digital,put|K=80|D=7|v=0.1|r=0.05|q=0.03,put,,,80.0,7,0.1,0.05,0.03,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,cf,4.3905882155957604e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,ql_analytic,4.3905882152195375e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,ql_fd,4.9011356617096e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,ql_fd_damped,4.9071372174619676e-08,nan,nan,ok
-digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,own_pde,4.6416359453339e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0,put,,,80.0,7,0.3,0.0,0.0,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,cf,4.7393336223223914e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,ql_analytic,4.739333614445229e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,ql_fd,5.227808170222252e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,ql_fd_damped,5.234196726411134e-08,nan,nan,ok
-digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,own_pde,5.0075807909895854e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0|q=0.03,put,,,80.0,7,0.3,0.0,0.03,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,cf,3.86013311505202e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,ql_analytic,3.8601331114149084e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,ql_fd,4.308559178111341e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,ql_fd_damped,4.313829216156854e-08,nan,nan,ok
-digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,own_pde,4.085007734058154e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0,put,,,80.0,7,0.3,0.05,0.0,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,cf,4.168037562991448e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,ql_analytic,4.168037562391631e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,ql_fd,4.650988675871513e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,ql_fd_damped,4.6566812981271545e-08,nan,nan,ok
-digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,own_pde,4.408079610278291e-08,nan,nan,ok
 digital,put|K=80|D=7|v=0.3|r=0.05|q=0.03,put,,,80.0,7,0.3,0.05,0.03,own_mc,0.0,0.0,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,cf,0.014575609661957738,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,ql_analytic,0.014575609661957811,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,ql_fd,0.014576407011377229,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,ql_fd_damped,0.014576670235860742,nan,nan,ok
-digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,own_pde,0.014595951578481606,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0,put,,,80.0,365,0.1,0.0,0.0,own_mc,0.01480865478515625,0.0003311141003236812,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,cf,0.029956349889287838,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,ql_analytic,0.029956349889287748,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,ql_fd,0.02995743738742026,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,ql_fd_damped,0.029958014382541177,nan,nan,ok
-digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,own_pde,0.029978096438404652,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0|q=0.03,put,,,80.0,365,0.1,0.0,0.03,own_mc,0.029571533203125,0.00046073060932678,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,cf,0.0034865907637786414,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,ql_analytic,0.0034865907637786314,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,ql_fd,0.0034848424797739946,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,ql_fd_damped,0.0034848732431471997,nan,nan,ok
-digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,own_pde,0.003498245408822135,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0,put,,,80.0,365,0.1,0.05,0.0,own_mc,0.003621394980055667,0.00016149877058265781,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,cf,0.008202123113967619,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,ql_analytic,0.008202123113967653,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,ql_fd,0.008198405307517974,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,ql_fd_damped,0.008198520929898276,nan,nan,ok
-digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,own_pde,0.008218772596651424,nan,nan,ok
 digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,put,,,80.0,365,0.1,0.05,0.03,own_mc,0.008186239554113812,0.00024163684375922686,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,cf,0.2763189853016807,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,ql_analytic,0.27631898530168064,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,ql_fd,0.27632522567212975,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,ql_fd_damped,0.2763242397088704,nan,nan,ok
-digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,own_pde,0.27631012803772004,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0,put,,,80.0,365,0.3,0.0,0.0,own_mc,0.27588653564453125,0.0009713205463484593,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,cf,0.3107195360857279,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,ql_analytic,0.3107195360857278,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,ql_fd,0.3107340131345383,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,ql_fd_damped,0.3107329247386301,nan,nan,ok
-digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,own_pde,0.3107104915014803,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0|q=0.03,put,,,80.0,365,0.3,0.0,0.03,own_mc,0.31096649169921875,0.0009470862737935896,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,cf,0.2125848484362763,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,ql_analytic,0.21258484843627623,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,ql_fd,0.21257943275418378,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,ql_fd_damped,0.21257857585294554,nan,nan,ok
-digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,own_pde,0.21257845341989381,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0,put,,,80.0,365,0.3,0.05,0.0,own_mc,0.21383647913294632,0.0009242107414013128,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,cf,0.2420625898117839,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,ql_analytic,0.24206258981178388,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,ql_fd,0.24205632278286623,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,ql_fd_damped,0.24205536982682707,nan,nan,ok
-digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,own_pde,0.24205472883394008,nan,nan,ok
 digital,put|K=80|D=365|v=0.3|r=0.05|q=0.03,put,,,80.0,365,0.3,0.05,0.03,own_mc,0.2425100894860524,0.0009287604155301687,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,cf,0.5027623530728142,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,ql_analytic,0.5027623530728142,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,ql_fd,0.5027355507396631,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,ql_fd_damped,0.5027355463445758,nan,nan,ok
-digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,own_pde,0.5027625413318335,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0,put,,,100.0,7,0.1,0.0,0.0,own_mc,0.5027084350585938,0.00014336003815256586,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,cf,0.519329057387885,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,ql_analytic,0.5193290573878868,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,ql_fd,0.5193491612793494,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,ql_fd_damped,0.5193491314420208,nan,nan,ok
-digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,own_pde,0.5193303728486122,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0|q=0.03,put,,,100.0,7,0.1,0.0,0.03,own_mc,0.5195999145507812,0.00037904604985633533,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,cf,0.47469929667521316,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,ql_analytic,0.474699296675214,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,ql_fd,0.4746772105841015,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,ql_fd_damped,0.47467724910541265,nan,nan,ok
-digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,own_pde,0.4746976117063934,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0,put,,,100.0,7,0.1,0.05,0.0,own_mc,0.4745355923601031,0.00042534274767493785,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,cf,0.49124219043873135,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,ql_analytic,0.4912421904387334,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,ql_fd,0.49122116973814495,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,ql_fd_damped,0.49122118249539887,nan,nan,ok
-digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,own_pde,0.4912416259102199,nan,nan,ok
 digital,put|K=100|D=7|v=0.1|r=0.05|q=0.03,put,,,100.0,7,0.1,0.05,0.03,own_mc,0.49141088230653995,0.00024660016362692617,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,cf,0.5082865294859646,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,ql_analytic,0.5082865294859646,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,ql_fd,0.50825987019074,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,ql_fd_damped,0.5082598572521098,nan,nan,ok
-digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,own_pde,0.5082870945420097,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0,put,,,100.0,7,0.3,0.0,0.0,own_mc,0.5078964233398438,0.00024350440422805404,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,cf,0.5138091170064195,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,ql_analytic,0.5138091170064201,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,ql_fd,0.513778817704797,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,ql_fd_damped,0.5137787961974237,nan,nan,ok
-digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,own_pde,0.5138100593915178,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0|q=0.03,put,,,100.0,7,0.3,0.0,0.03,own_mc,0.5135574340820312,0.00031722534925734464,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,cf,0.4986008693750693,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,ql_analytic,0.49860086937506953,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,ql_fd,0.49856137537677125,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,ql_fd_damped,0.4985613766241999,nan,nan,ok
-digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,own_pde,0.4986008066857882,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0,put,,,100.0,7,0.3,0.05,0.0,own_mc,0.498499418733905,8.814240351177727e-05,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,cf,0.5041202215911774,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,ql_analytic,0.5041202215911781,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,ql_fd,0.5041318551317193,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,ql_fd_damped,0.5041318480498553,nan,nan,ok
-digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,own_pde,0.5041205351029097,nan,nan,ok
 digital,put|K=100|D=7|v=0.3|r=0.05|q=0.03,put,,,100.0,7,0.3,0.05,0.03,own_mc,0.5042922011906765,0.00018979289320430245,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,cf,0.5199388058383725,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,ql_analytic,0.5199388058383725,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,ql_fd,0.5199124657683404,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,ql_fd_damped,0.5199124347646659,nan,nan,ok
-digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,own_pde,0.5199401622306309,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0,put,,,100.0,365,0.1,0.0,0.0,own_mc,0.5201950073242188,0.0003845189405143977,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,cf,0.6368306511756191,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,ql_analytic,0.6368306511756192,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,ql_fd,0.6368205603641446,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,ql_fd_damped,0.6368203323569707,nan,nan,ok
-digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,own_pde,0.6368385358505178,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0|q=0.03,put,,,100.0,365,0.1,0.0,0.03,own_mc,0.6375885009765625,0.0008722789701550077,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,cf,0.31043868837728184,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,ql_analytic,0.3104386883772816,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,ql_fd,0.31044539447073566,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,ql_fd_damped,0.3104457339990209,nan,nan,ok
-digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,own_pde,0.310430237926149,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0,put,,,100.0,365,0.1,0.05,0.0,own_mc,0.3118100908178191,0.0008828186640241429,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,cf,0.4189046090469506,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,ql_analytic,0.4189046090469498,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,ql_fd,0.41888073955718513,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,ql_fd_damped,0.41888085231704314,nan,nan,ok
-digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,own_pde,0.41890084900987096,nan,nan,ok
 digital,put|K=100|D=365|v=0.1|r=0.05|q=0.03,put,,,100.0,365,0.1,0.05,0.03,own_mc,0.41842715224466825,0.0006042602986606386,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,cf,0.5596176923702425,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,ql_analytic,0.5596176923702425,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,ql_fd,0.5595926292060465,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,ql_fd_damped,0.5595925355355215,nan,nan,ok
-digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,own_pde,0.5596216429107677,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0,put,,,100.0,365,0.3,0.0,0.0,own_mc,0.5597915649414062,0.0006337419974998844,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,cf,0.5987063256829237,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,ql_analytic,0.5987063256829237,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,ql_fd,0.5987259432014254,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,ql_fd_damped,0.5987257844826189,nan,nan,ok
-digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,own_pde,0.5987125196232516,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0|q=0.03,put,,,100.0,365,0.3,0.0,0.03,own_mc,0.5990676879882812,0.000778511247072791,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,cf,0.4692902444545598,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,ql_analytic,0.4692902444545597,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,ql_fd,0.4692925684316054,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,ql_fd_damped,0.46929258744008673,nan,nan,ok
-digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,own_pde,0.4692898163121996,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0,put,,,100.0,365,0.3,0.05,0.0,own_mc,0.46923554153398633,0.00021371790598278257,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,cf,0.507201951704665,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,ql_analytic,0.5072019517046646,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,ql_fd,0.5071887649229242,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,ql_fd_damped,0.5071887138889829,nan,nan,ok
-digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,own_pde,0.5072040979125618,nan,nan,ok
 digital,put|K=100|D=365|v=0.3|r=0.05|q=0.03,put,,,100.0,365,0.3,0.05,0.03,own_mc,0.507162215212886,0.00046234929065431396,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,cf,1.0,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,ql_analytic,1.0,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,ql_fd,0.9999999999999987,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,ql_fd_damped,1.0,nan,nan,ok
-digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,own_pde,0.9999999999999972,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0,put,,,120.0,7,0.1,0.0,0.0,own_mc,1.0,0.0,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,cf,1.0,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,ql_analytic,1.0,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,ql_fd,1.0000000000000013,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,ql_fd_damped,0.9999999999999969,nan,nan,ok
-digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,own_pde,0.9999999999999972,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0|q=0.03,put,,,120.0,7,0.1,0.0,0.03,own_mc,1.0,0.0,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,cf,0.9990415554920403,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,ql_analytic,0.9990415554920403,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,ql_fd,0.999041555492016,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,ql_fd_damped,0.9990415554977079,nan,nan,ok
-digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,own_pde,0.9990415554949057,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0,put,,,120.0,7,0.1,0.05,0.0,own_mc,0.9990415554920401,8.673683555090356e-19,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,cf,0.9990415554920403,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,ql_analytic,0.9990415554920403,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,ql_fd,0.99904155549197,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,ql_fd_damped,0.9990415554976639,nan,nan,ok
-digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,own_pde,0.9990415554949057,nan,nan,ok
 digital,put|K=120|D=7|v=0.1|r=0.05|q=0.03,put,,,120.0,7,0.1,0.05,0.03,own_mc,0.9990415554920401,8.673683555090356e-19,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,cf,0.9999948136175927,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,ql_analytic,0.9999948136175927,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,ql_fd,0.9999947691267743,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,ql_fd_damped,0.9999947664822325,nan,nan,ok
-digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,own_pde,0.9999946798579821,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0,put,,,120.0,7,0.3,0.0,0.0,own_mc,0.9999923706054688,7.62939453125e-06,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,cf,0.9999951353063268,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,ql_analytic,0.9999951353063268,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,ql_fd,0.9999950956512625,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,ql_fd_damped,0.999995093173427,nan,nan,ok
-digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,own_pde,0.999995008286317,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0|q=0.03,put,,,120.0,7,0.3,0.0,0.03,own_mc,0.9999847412109375,1.0789510899155251e-05,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,cf,0.9990357928873825,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,ql_analytic,0.9990357928873824,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,ql_fd,0.9990357433711362,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,ql_fd_damped,0.9990357404358269,nan,nan,ok
-digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,own_pde,0.9990356475192452,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0,put,,,120.0,7,0.3,0.05,0.0,own_mc,0.9990186892455002,1.3201632146555465e-05,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,cf,0.9990361486581265,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,ql_analytic,0.9990361486581265,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,ql_fd,0.9990361042330127,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,ql_fd_damped,0.9990361014817669,nan,nan,ok
-digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,own_pde,0.9990360104788235,nan,nan,ok
 digital,put|K=120|D=7|v=0.3|r=0.05|q=0.03,put,,,120.0,7,0.3,0.05,0.03,own_mc,0.9990339334098601,7.622082179962466e-06,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,cf,0.9694806882951498,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,ql_analytic,0.9694806882951499,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,ql_fd,0.9694787670090559,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,ql_fd_damped,0.9694787170275748,nan,nan,ok
-digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,own_pde,0.9694589715107206,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0,put,,,120.0,365,0.1,0.0,0.0,own_mc,0.96966552734375,0.0004662575907633191,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,cf,0.9851179516902424,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,ql_analytic,0.9851179516902424,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,ql_fd,0.9851194546522126,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,ql_fd_damped,0.9851194781835282,nan,nan,ok
-digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,own_pde,0.9850975153145333,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0|q=0.03,put,,,120.0,365,0.1,0.0,0.03,own_mc,0.985137939453125,0.00033169236956377717,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,cf,0.8705245796955801,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,ql_analytic,0.87052457969558,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,ql_fd,0.8705313748925618,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,ql_fd_damped,0.8705312238139287,nan,nan,ok
-digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,own_pde,0.8705127270756328,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0,put,,,120.0,365,0.1,0.05,0.0,own_mc,0.869149309822498,0.0007020592811724748,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,cf,0.9063861547532417,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,ql_analytic,0.9063861547532416,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,ql_fd,0.9063821640475244,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,ql_fd_damped,0.9063821059550206,nan,nan,ok
-digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,own_pde,0.9063673709236019,nan,nan,ok
 digital,put|K=120|D=365|v=0.1|r=0.05|q=0.03,put,,,120.0,365,0.1,0.05,0.03,own_mc,0.9062413934759341,0.0005437037250875287,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,cf,0.7756962337926054,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,ql_analytic,0.7756962337926054,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,ql_fd,0.7756864609311255,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,ql_fd_damped,0.7756871617224201,nan,nan,ok
-digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,own_pde,0.7757029799259334,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0,put,,,120.0,365,0.3,0.0,0.0,own_mc,0.7753982543945312,0.0009715172211807398,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,cf,0.8044815683397785,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,ql_analytic,0.8044815683397786,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,ql_fd,0.8044935723994763,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,ql_fd_damped,0.8044941970851606,nan,nan,ok
-digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,own_pde,0.8044860190035246,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0|q=0.03,put,,,120.0,365,0.3,0.0,0.03,own_mc,0.8052749633789062,0.0009524009920751145,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,cf,0.6875142523710495,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,ql_analytic,0.6875142523710495,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,ql_fd,0.6875199723880216,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,ql_fd_damped,0.687520837319688,nan,nan,ok
-digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,own_pde,0.6875227134250629,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0,put,,,120.0,365,0.3,0.05,0.0,own_mc,0.6881085900379919,0.000923664341962236,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,cf,0.7184063270820346,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,ql_analytic,0.7184063270820344,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,ql_fd,0.7184123386369492,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,ql_fd_damped,0.7184131141788079,nan,nan,ok
-digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available: non-plain payoff given
-digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available: non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,ql_crr,nan,nan,nan,not available (expected refusal): non-plain payoff given
+digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,ql_mc,nan,nan,nan,not available (expected refusal): non-plain payoff given
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,own_pde,0.7184138270980467,nan,nan,ok
 digital,put|K=120|D=365|v=0.3|r=0.05|q=0.03,put,,,120.0,365,0.3,0.05,0.03,own_mc,0.7190101928938577,0.0009286855645891004,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,cf,3.5242536279342165,nan,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_analytic,3.5242536279342223,nan,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_crr,3.5251318624746095,nan,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_fd,3.524246339316188,nan,nan,ok
-barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_mc,3.5255128646139426,0.01116552416899462,nan,ok
+barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_mc,3.522179275292981,0.011193648392778718,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,own_pde,3.5242364535203907,nan,nan,ok
-barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,own_mc,3.5462453660293765,0.015877062993122713,nan,ok
+barrier,down-and-out|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,30,0.3,0.05,0.02,own_mc,3.516662203024473,0.015863567747857285,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,365,0.3,0.05,0.02,cf,8.510761494328012,nan,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,365,0.3,0.05,0.02,ql_analytic,8.510761494328019,nan,nan,ok
 barrier,down-and-out|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-out,90.0,100.0,365,0.3,0.05,0.02,ql_crr,8.511597169231733,nan,nan,ok
@@ -2536,9 +2536,9 @@ barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90
 barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_analytic,1.063229944268333,nan,nan,ok
 barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_crr,1.0620186303358983,nan,nan,ok
 barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_fd,1.0661147497013719,nan,nan,ok
-barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_mc,1.056976096110045,0.005030564459249873,nan,ok
+barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,ql_mc,1.0632165354363836,0.0050603465745049725,nan,ok
 barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,own_pde,1.0631571732448675,nan,nan,ok
-barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,own_mc,1.0584960064921427,0.006672727749004169,nan,ok
+barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,30,0.3,0.05,0.02,own_mc,1.0608728122666577,0.006664918242723347,nan,ok
 barrier,down-and-out|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,365,0.3,0.05,0.02,cf,0.0523399542808356,nan,nan,ok
 barrier,down-and-out|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,365,0.3,0.05,0.02,ql_analytic,0.05233995428081428,nan,nan,ok
 barrier,down-and-out|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-out,90.0,100.0,365,0.3,0.05,0.02,ql_crr,0.05301706106266476,nan,nan,ok
@@ -2558,46 +2558,46 @@ barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90
 barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_analytic,0.020372455895838137,nan,nan,ok
 barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_crr,0.020336224432991937,nan,nan,ok
 barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_fd,0.02048287156253581,nan,nan,ok
-barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_mc,0.020203070269264427,0.0009196752942381539,nan,ok
-barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
-barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_mc,0.018317187472016192,0.0011508209924741435,nan,ok
+barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_mc,0.020988463601998977,0.000939557631767859,nan,ok
+barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|call|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_mc,0.023546064511838417,0.0013569346917485451,nan,ok
 barrier,down-and-in|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,365,0.3,0.05,0.02,cf,4.509519774399333,nan,nan,ok
 barrier,down-and-in|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,365,0.3,0.05,0.02,ql_analytic,4.509519774399347,nan,nan,ok
 barrier,down-and-in|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,365,0.3,0.05,0.02,ql_crr,4.511060555690294,nan,nan,ok
 barrier,down-and-in|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,365,0.3,0.05,0.02,ql_fd,4.5100737177588,nan,nan,ok
-barrier,down-and-in|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,90.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,down-and-in|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,30,0.3,0.05,0.02,cf,3.441210130223375,nan,nan,ok
 barrier,down-and-in|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,30,0.3,0.05,0.02,ql_analytic,3.441210130223375,nan,nan,ok
 barrier,down-and-in|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,30,0.3,0.05,0.02,ql_crr,3.4301098335867026,nan,nan,ok
 barrier,down-and-in|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,30,0.3,0.05,0.02,ql_fd,3.441312424475226,nan,nan,ok
-barrier,down-and-in|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,down-and-in|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,365,0.3,0.05,0.02,cf,12.907526398014838,nan,nan,ok
 barrier,down-and-in|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,365,0.3,0.05,0.02,ql_analytic,12.907526398014852,nan,nan,ok
 barrier,down-and-in|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,365,0.3,0.05,0.02,ql_crr,12.72658866618553,nan,nan,ok
 barrier,down-and-in|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,365,0.3,0.05,0.02,ql_fd,12.908028204539733,nan,nan,ok
-barrier,down-and-in|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,call,down-and-in,99.9,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,cf,2.235529041851624,nan,nan,ok
 barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_analytic,2.235529041851638,nan,nan,ok
 barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_crr,2.2375825835633707,nan,nan,ok
 barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_fd,2.232717294921801,nan,nan,ok
-barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_mc,2.2456479733784307,0.011472989824278895,nan,ok
-barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
-barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_mc,2.2548518519323046,0.016158394126031313,nan,ok
+barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,ql_mc,2.246335703989388,0.011485481605880416,nan,ok
+barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,30,0.3,0.05,0.02,own_mc,2.254349520153139,0.01615588927660386,nan,ok
 barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,365,0.3,0.05,0.02,cf,10.071016433842392,nan,nan,ok
 barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,365,0.3,0.05,0.02,ql_analytic,10.071016433842392,nan,nan,ok
 barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,365,0.3,0.05,0.02,ql_crr,10.072744130493382,nan,nan,ok
 barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,365,0.3,0.05,0.02,ql_fd,10.069600258603879,nan,nan,ok
-barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,90.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,down-and-in|put|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,30,0.3,0.05,0.02,cf,3.2987589652697054,nan,nan,ok
 barrier,down-and-in|put|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,30,0.3,0.05,0.02,ql_analytic,3.2987589652697054,nan,nan,ok
 barrier,down-and-in|put|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,30,0.3,0.05,0.02,ql_crr,3.298587927485268,nan,nan,ok
 barrier,down-and-in|put|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,30,0.3,0.05,0.02,ql_fd,3.298831454691893,nan,nan,ok
-barrier,down-and-in|put|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|put|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,down-and-in|put|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,365,0.3,0.05,0.02,cf,10.123356387654454,nan,nan,ok
 barrier,down-and-in|put|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,365,0.3,0.05,0.02,ql_analytic,10.123356387654447,nan,nan,ok
 barrier,down-and-in|put|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,365,0.3,0.05,0.02,ql_crr,10.122780591284537,nan,nan,ok
 barrier,down-and-in|put|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,365,0.3,0.05,0.02,ql_fd,10.12351550913321,nan,nan,ok
-barrier,down-and-in|put|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,down-and-in|put|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,put,down-and-in,99.9,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,up-and-out|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,100.1,100.0,30,0.3,0.05,0.02,cf,2.0773946118879394e-08,nan,nan,ok
 barrier,up-and-out|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,100.1,100.0,30,0.3,0.05,0.02,ql_analytic,2.077396032973411e-08,nan,nan,ok
 barrier,up-and-out|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,100.1,100.0,30,0.3,0.05,0.02,ql_crr,0.0,nan,nan,ok
@@ -2612,9 +2612,9 @@ barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110
 barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_analytic,0.849213805686609,nan,nan,ok
 barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_crr,0.8501778761824232,nan,nan,ok
 barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_fd,0.8521180424739134,nan,nan,ok
-barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_mc,0.8433814479252797,0.004669393688718004,nan,ok
+barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_mc,0.8498566743617798,0.004689101297460825,nan,ok
 barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,own_pde,0.8491622017591764,nan,nan,ok
-barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,own_mc,0.8378785290840023,0.006138126163170015,nan,ok
+barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,30,0.3,0.05,0.02,own_mc,0.841464162130136,0.006157184766237424,nan,ok
 barrier,up-and-out|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,365,0.3,0.05,0.02,cf,0.036768297786061055,nan,nan,ok
 barrier,up-and-out|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,365,0.3,0.05,0.02,ql_analytic,0.03676829778605395,nan,nan,ok
 barrier,up-and-out|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-out,110.0,100.0,365,0.3,0.05,0.02,ql_crr,0.036479106409707585,nan,nan,ok
@@ -2634,9 +2634,9 @@ barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0
 barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_analytic,3.259527393273024,nan,nan,ok
 barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_crr,3.2603703488561355,nan,nan,ok
 barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_fd,3.2595078752924342,nan,nan,ok
-barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_mc,3.2614969726907588,0.009312036219582109,nan,ok
+barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,ql_mc,3.257819971869111,0.009301531148360444,nan,ok
 barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,own_pde,3.2594876337692784,nan,nan,ok
-barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,own_mc,3.2663945722498378,0.013135985819556278,nan,ok
+barrier,up-and-out|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,30,0.3,0.05,0.02,own_mc,3.2587917581797745,0.013199684608610596,nan,ok
 barrier,up-and-out|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,365,0.3,0.05,0.02,cf,5.998018807211295,nan,nan,ok
 barrier,up-and-out|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,365,0.3,0.05,0.02,ql_analytic,5.998018807211274,nan,nan,ok
 barrier,up-and-out|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-out,110.0,100.0,365,0.3,0.05,0.02,ql_crr,5.9976485068946745,nan,nan,ok
@@ -2646,43 +2646,43 @@ barrier,up-and-in|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,100
 barrier,up-and-in|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,30,0.3,0.05,0.02,ql_analytic,3.5446260630561,nan,nan,ok
 barrier,up-and-in|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,30,0.3,0.05,0.02,ql_crr,3.5444549796708493,nan,nan,ok
 barrier,up-and-in|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,30,0.3,0.05,0.02,ql_fd,3.5447286202986277,nan,nan,ok
-barrier,up-and-in|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|call|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,up-and-in|call|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,365,0.3,0.05,0.02,cf,13.020281268260284,nan,nan,ok
 barrier,up-and-in|call|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,365,0.3,0.05,0.02,ql_analytic,13.020281268260298,nan,nan,ok
 barrier,up-and-in|call|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,365,0.3,0.05,0.02,ql_crr,13.019698855570205,nan,nan,ok
 barrier,up-and-in|call|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,365,0.3,0.05,0.02,ql_fd,13.02081242206375,nan,nan,ok
-barrier,up-and-in|call|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|call|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,100.1,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,cf,2.6954122781434453,nan,nan,ok
 barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_analytic,2.6954122781434515,nan,nan,ok
 barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_crr,2.6952566862729803,nan,nan,ok
 barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_fd,2.6926111684048104,nan,nan,ok
-barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_mc,2.6971872835393795,0.013057495149859974,nan,ok
-barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
-barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_mc,2.6812005561396206,0.018341268863980333,nan,ok
+barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_mc,2.7265556082127542,0.013175158038463758,nan,ok
+barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_mc,2.681470787848779,0.01821151109643506,nan,ok
 barrier,up-and-in|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,365,0.3,0.05,0.02,cf,12.983512970941284,nan,nan,ok
 barrier,up-and-in|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,365,0.3,0.05,0.02,ql_analytic,12.983512970941312,nan,nan,ok
 barrier,up-and-in|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,365,0.3,0.05,0.02,ql_crr,12.981371581920406,nan,nan,ok
 barrier,up-and-in|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,365,0.3,0.05,0.02,ql_fd,12.982649529213186,nan,nan,ok
-barrier,up-and-in|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,call,up-and-in,110.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,up-and-in|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,30,0.3,0.05,0.02,cf,3.204436309565004,nan,nan,ok
 barrier,up-and-in|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,30,0.3,0.05,0.02,ql_analytic,3.204436309564997,nan,nan,ok
 barrier,up-and-in|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,30,0.3,0.05,0.02,ql_crr,3.19425276071888,nan,nan,ok
 barrier,up-and-in|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,30,0.3,0.05,0.02,ql_fd,3.20451013405551,nan,nan,ok
-barrier,up-and-in|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,up-and-in|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,365,0.3,0.05,0.02,cf,10.041554095682777,nan,nan,ok
 barrier,up-and-in|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,365,0.3,0.05,0.02,ql_analytic,10.041554095682763,nan,nan,ok
 barrier,up-and-in|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,365,0.3,0.05,0.02,ql_crr,9.910319978217297,nan,nan,ok
 barrier,up-and-in|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,365,0.3,0.05,0.02,ql_fd,10.041734267435007,nan,nan,ok
-barrier,up-and-in|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,100.1,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
 barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,cf,0.03923159284694955,nan,nan,ok
 barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_analytic,0.03923159284694644,nan,nan,ok
 barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_crr,0.03919733164548559,nan,nan,ok
 barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_fd,0.03932416933073846,nan,nan,ok
-barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_mc,0.04049150895009385,0.0012636088040848326,nan,ok
-barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
-barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_mc,0.036665439728428284,0.0015180882799293168,nan,ok
+barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,ql_mc,0.04060836787432389,0.0012993738602311842,nan,ok
+barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|put|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,30,0.3,0.05,0.02,own_mc,0.03638374954711258,0.0015157247071278719,nan,ok
 barrier,up-and-in|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,365,0.3,0.05,0.02,cf,4.125337580911932,nan,nan,ok
 barrier,up-and-in|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,365,0.3,0.05,0.02,ql_analytic,4.125337580911932,nan,nan,ok
 barrier,up-and-in|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,365,0.3,0.05,0.02,ql_crr,4.123304914553303,nan,nan,ok
 barrier,up-and-in|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,365,0.3,0.05,0.02,ql_fd,4.125532535131866,nan,nan,ok
-barrier,up-and-in|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not available: own_pde prices knock-outs only (protocol section 4)
+barrier,up-and-in|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,put,up-and-in,110.0,100.0,365,0.3,0.05,0.02,own_pde,nan,nan,nan,not applicable: own_pde prices knock-outs only (protocol section 4)

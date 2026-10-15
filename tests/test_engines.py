@@ -43,7 +43,12 @@ def test_reference_failure_raises():
 
 def test_own_engine_failure_is_recorded():
     r = own.price_barrier(BarrierPoint("down-and-in", "call", 90.0, 100.0, 30, 0.3, 0.05, 0.02), "own_pde")
-    assert r.status.startswith("not available")
+    assert r.status.startswith("not applicable")
+
+
+def test_programming_errors_are_not_hidden():
+    with pytest.raises((ValueError, KeyError)):
+        own.price_vanilla(P, "european", "own_typo")
 
 
 def test_mc_seed_rule_and_determinism():

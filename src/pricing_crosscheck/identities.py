@@ -35,7 +35,7 @@ def _note(identity: str, engine: str, instrument: str, residual: float, magnitud
     if (identity, engine) in BY_CONSTRUCTION:
         return False, "holds by construction (declared in protocol section 9)"
     if engine not in EXACT_ENGINES and abs(residual) <= MACHINE_LEVEL * max(1.0, magnitude):
-        return True, "holds to machine precision for a numerical engine"
+        return False, "holds to machine precision for a numerical engine (not informative, protocol section 9)"
     return True, ""
 
 

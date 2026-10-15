@@ -59,6 +59,10 @@ def price(
     """One engine at one point; MC seeds follow protocol section 12."""
     s = None
     if is_mc(instrument, engine):
+        if instrument == "barrier":
+            # monitoring frequency is part of the run (protocol section 12)
+            spd = {**spec.load()["engines"]["barrier"][engine], **(overrides or {})}["steps_per_day"]
+            run = f"steps_per_year={spd * 365:g}" + (f";{run}" if run else "")
         s = seed(instrument, point.point_id, engine, samples_of(instrument, engine, overrides), run)
     if engine.startswith("ql_"):
         if instrument == "barrier":

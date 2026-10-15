@@ -123,7 +123,8 @@ def _evaluate(instrument, want_greeks: bool, is_mc: bool) -> EngineResult:
     try:
         value = instrument.NPV()
     except RuntimeError as exc:  # QuantLib errors surface as RuntimeError
-        res.status = f"not available: {str(exc).strip()[:200]}"
+        msg = str(exc).strip()[:200]
+        res.status = ("not available (expected refusal): " if "non-plain payoff" in msg else "not available: ") + msg
         return res
     if not math.isfinite(value):
         res.status = f"not available: non-finite value {value}"
@@ -134,6 +135,11 @@ def _evaluate(instrument, want_greeks: bool, is_mc: bool) -> EngineResult:
             res.std_error = float(instrument.errorEstimate())
         except RuntimeError:
             res.std_error = NAN
+        if not (math.isfinite(res.std_error) and res.std_error >= 0):
+            # without a standard error the MC tolerance would silently shrink
+            res.status = "not available: no standard error estimate"
+            res.value = NAN
+            return res
     if want_greeks:
         for g in GREEKS:
             try:

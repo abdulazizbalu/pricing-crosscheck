@@ -19,6 +19,10 @@ from pricing_crosscheck.spec import BarrierPoint, VanillaPoint
 REFERENCE_ENGINES = ("cf", "ref_pde")
 
 
+class NotApplicable(Exception):
+    """An own engine that does not price this instrument by design."""
+
+
 def _cfg(instrument: str, engine: str, overrides: dict[str, Any] | None) -> dict[str, Any]:
     return {**spec.load()["engines"][instrument][engine], **(overrides or {})}
 
@@ -34,10 +38,8 @@ def _finish(result: EngineResult, engine: str) -> EngineResult:
 def _guard(engine: str, fn) -> EngineResult:
     try:
         return _finish(fn(), engine)
-    except (ValueError, RuntimeError, ArithmeticError) as exc:
-        if engine in REFERENCE_ENGINES:
-            raise
-        return EngineResult(status=f"not available: {exc}")
+    except NotApplicable as exc:
+        return EngineResult(status=f"not applicable: {exc}")
 
 
 def american_reference(p: VanillaPoint) -> tuple[float, float]:
@@ -64,7 +66,7 @@ def price_vanilla(
         if engine == "cf":
             fn = cf.digital if payoff == "digital" else cf.european
             if american:
-                raise ValueError("no closed form for American options")
+                raise NotApplicable("no closed form for American options")
             return EngineResult(value=fn(*args))
         if engine == "ref_pde":
             value, u = american_reference(p)
@@ -72,7 +74,7 @@ def price_vanilla(
         c = _cfg(instrument, engine, overrides)
         if engine == "own_crr":
             if payoff == "digital":
-                raise ValueError("own_crr prices vanilla payoffs only")
+                raise NotApplicable("own_crr prices vanilla payoffs only")
             return EngineResult(value=tree.crr(*args, int(c["steps"]), american=american))
         if engine == "own_pde":
             r = pde.vanilla(*args, int(c["space_nodes"]), int(c["time_steps"]),
@@ -80,7 +82,7 @@ def price_vanilla(
             return EngineResult(value=r.value)
         if engine == "own_mc":
             if american:
-                raise ValueError("own_mc does not price American options")
+                raise NotApplicable("own_mc does not price American options")
             r = mc.terminal(*args, int(c["samples"]), seed, payoff)
             return EngineResult(value=r.value, std_error=r.std_error)
         raise ValueError(f"unknown own engine {engine!r}")
@@ -99,7 +101,7 @@ def price_barrier(
         c = _cfg("barrier", engine, overrides)
         if engine == "own_pde":
             if p.is_knock_in:
-                raise ValueError("own_pde prices knock-outs only (protocol section 4)")
+                raise NotApplicable("own_pde prices knock-outs only (protocol section 4)")
             r = pde.knock_out(*args, p.is_down, int(c["space_nodes"]), int(c["time_steps"]),
                               rannacher_steps=int(c["rannacher_steps"]))
             return EngineResult(value=r.value)
