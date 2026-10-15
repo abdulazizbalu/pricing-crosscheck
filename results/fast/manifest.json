@@ -1,0 +1,17 @@
+{
+  "content_hash": "f8df78f5bc6ec4839f46d07f3312ec7c201d92a415c4f2d0211866d969e84aba",
+  "files": {
+    "environment.csv": "a2c51ec6651667dc3acbb41e3a779c3eba1101c495310c9260421dc91cc26a56"
+  },
+  "profile": "fast",
+  "versions": {
+    "QuantLib": "1.43",
+    "QuantLib_compiled": "1.43",
+    "implementation": "CPython",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "platform": "linux-x86_64",
+    "python": "3.12.3",
+    "scipy": "1.15.3"
+  }
+}
