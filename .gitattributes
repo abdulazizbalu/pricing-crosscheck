@@ -1,0 +1,5 @@
+# Results are checksummed in manifest.json; keep their bytes identical on every OS.
+results/** -text
+specs/** text eol=lf
+*.py text eol=lf
+requirements.lock text eol=lf
