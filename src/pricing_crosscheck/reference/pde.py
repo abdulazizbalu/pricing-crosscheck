@@ -26,6 +26,7 @@ from scipy.linalg import solve_banded
 N_SD = 8.0  # half-width of the domain in standard deviations
 PENALTY = 1e8  # enforcement error ~ multiplier / PENALTY; larger values lose the multiplier sign to rounding
 MAX_PENALTY_ITERS = 100
+ACTIVATION_TOL = 1e-13  # above solve rounding (~1e-15 relative), below multiplier / PENALTY in the exercise region
 
 
 @dataclass
@@ -107,21 +108,25 @@ def _theta_step(
         return solve_banded((1, 1), ab, rhs, overwrite_ab=True, overwrite_b=True, check_finite=False), 1
     # Penalty iteration (Forsyth and Vetzal 2002). Exercise can only be optimal
     # where the payoff is positive (V >= 0 always), so other nodes never enter
-    # the active set. Stop when the active set repeats. Nodes whose multiplier
-    # is zero up to rounding can make the set cycle; then the current iterate is
-    # projected onto the obstacle, a change at the level of that rounding.
+    # the active set. A node enters the active set only if its value is below
+    # the obstacle by more than ACTIVATION_TOL (relative): where the
+    # continuation value equals the payoff up to rounding over a whole region
+    # (e.g. r = q = 0, where early exercise is never strictly optimal) the
+    # sign of value - obstacle is rounding noise and would otherwise make the
+    # active set wander. Iteration stops when the active set repeats; if it
+    # repeats after a cycle (a multiplier that is zero up to rounding), the
+    # result is projected onto the obstacle, a change at rounding level.
     candidate = obstacle > 0.0
     candidate[0] = candidate[-1] = False
-    active = candidate & (v < obstacle)
+    margin = ACTIVATION_TOL * np.maximum(1.0, np.abs(obstacle))
+    active = candidate & (v < obstacle - margin)
     seen = {active.tobytes()}
     for it in range(1, MAX_PENALTY_ITERS + 1):
         abp = ab.copy()
         abp[1, active] += PENALTY
         b = rhs + np.where(active, PENALTY * obstacle, 0.0)
         new = solve_banded((1, 1), abp, b, check_finite=False)
-        new_active = candidate & (new < obstacle)
-        if np.array_equal(new_active, active):
-            return new, it
+        new_active = candidate & (new < obstacle - margin)
         key = new_active.tobytes()
         if key in seen:
             return np.maximum(new, obstacle), it
@@ -139,12 +144,20 @@ def _march(
     boundary: Callable[[float], tuple[float, float]],
     obstacle: Callable[[float], np.ndarray] | None,
 ) -> tuple[np.ndarray, int]:
+    """March from tau = 0 to T in uniform steps.
+
+    With an early-exercise constraint the time error of this scheme is first
+    order in practice (Forsyth and Vetzal obtain second order only with
+    adaptive time steps); ``ref_pde`` therefore reports u = |V3 - V2|, which
+    for first-order convergence is about the error of V3.
+    """
     sub, diag, sup = coeffs
-    dt = T / steps
+    taus = T * np.arange(steps + 1) / steps
     v = v0
-    tau = 0.0
     iters = 0
     for n in range(steps):
+        dt = float(taus[n + 1] - taus[n])
+        tau = float(taus[n])
         if n < rannacher_steps:
             parts = [(0.5 * dt, 1.0), (0.5 * dt, 1.0)]
         else:
