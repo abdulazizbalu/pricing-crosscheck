@@ -86,3 +86,16 @@ def test_identity_table_on_fast_european_and_digital():
     ids = identity_table(t, "fast")
     parity = [r for r in ids.rows if r["identity"] in ("put_call_parity", "digital_call_plus_put")]
     assert parity and all(r["passed"] for r in parity)
+
+
+def test_numerical_failure_of_own_engine_is_recorded(monkeypatch):
+    from pricing_crosscheck.reference import pde
+
+    def boom(*a, **k):
+        raise RuntimeError("penalty iteration did not converge")
+
+    monkeypatch.setattr(pde, "vanilla", boom)
+    r = own.price_vanilla(P, "european", "own_pde")
+    assert r.status.startswith("not available")
+    with pytest.raises(RuntimeError):
+        own.price_vanilla(P, "american", "ref_pde")

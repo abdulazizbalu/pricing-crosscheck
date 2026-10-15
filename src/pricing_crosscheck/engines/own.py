@@ -40,6 +40,13 @@ def _guard(engine: str, fn) -> EngineResult:
         return _finish(fn(), engine)
     except NotApplicable as exc:
         return EngineResult(status=f"not applicable: {exc}")
+    except (RuntimeError, ArithmeticError) as exc:
+        # numerical failure of an engine under test (e.g. a non-converging
+        # iteration): recorded, not fatal (protocol section 4). References stop
+        # the run; programming errors (ValueError, KeyError, ...) propagate.
+        if engine in REFERENCE_ENGINES:
+            raise
+        return EngineResult(status=f"not available: {exc}")
 
 
 def american_reference(p: VanillaPoint) -> tuple[float, float]:
