@@ -441,7 +441,10 @@ def findings_markdown(tables: dict[str, Table]) -> str:
               "outside (0, 1) raises an error. `results/investigations/lr_deep_itm_ql1.44.csv` shows that 1.44 "
               "prices these puts correctly except where exp(-x) underflows, where it raises \"invalid up "
               "probability: 0\". It also raises \"invalid up probability: 1\" for deep in-the-money calls that "
-              "1.43 priced correctly (see `docs/quantlib_issue_draft.md`). The points are classified under the "
+              "1.43 priced correctly. This is a known consequence of the change: the description of pull request "
+              "2729 notes that pu can round to 1 and reports 176 Leisen-Reimer cases that raise an error on its "
+              "3360-point test grid after the change. `docs/quantlib_issue_draft.md` is a draft follow-up "
+              "proposal to that pull request (not posted). The points are classified under the "
               "confirmed mechanism (protocol deviation 9).", ""]
         L += _md_table(["point", "LR value", "closed form"], [[r["point_id"], r["value"], r["reference"]]
                                                               for r in lr_big])

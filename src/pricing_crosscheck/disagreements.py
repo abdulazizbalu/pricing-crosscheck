@@ -79,8 +79,9 @@ def classify(row: dict[str, Any]) -> dict[str, Any]:
     if eng == "ql_lr":
         # Protocol deviation 9: a confirmed mechanism takes precedence over the
         # refinement rules (refinement can hide it when the 4x tree no longer collapses).
+        # The engine must actually have returned 0, the symptom of the mechanism.
         c = _cfg(inst, eng)
-        if lr_collapsed(p.option, p.spot, p.strike, p.T, p.rate, p.div, p.vol, int(c["steps"])):
+        if row["value"] == 0.0 and lr_collapsed(p.option, p.spot, p.strike, p.T, p.rate, p.div, p.vol, int(c["steps"])):
             out["category"] = LR_MECHANISM
             return out
     if eng in NO_REFINEMENT:

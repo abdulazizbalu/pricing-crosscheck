@@ -1,17 +1,22 @@
-# Draft issue for QuantLib (not posted)
+# Draft follow-up to QuantLib pull request #2729 (not posted)
 
-**Title:** BinomialLRVanillaEngine: deep in-the-money calls at small sigma*sqrt(T) now raise "invalid up probability: 1"
+**Title:** Follow-up to #2729: compute the Leisen-Reimer down probability without 1 - pu
 
 ## Summary
 
-Since QuantLib 1.44 (pull request #2729), `BinomialLRVanillaEngine` raises
-`invalid up probability: 1` for deep in-the-money calls when sigma*sqrt(T) is
-small, for example spot 100, strike 80, sigma 1%, one day, 1001 steps. QuantLib
-1.43 priced these calls correctly (it matched `AnalyticEuropeanEngine`).
-Deep in-the-money puts at the same distance, which 1.43 priced as 0, are
-handled by #2729 and now price correctly. The change seems to leave the two
-sides asymmetric; a small change to how `down_` is computed would let both
-sides price whenever the small probability is representable.
+Pull request #2729 (merged 2026-09-07, in QuantLib 1.44) fixed the Leisen-Reimer
+tree for deep in-the-money puts at small sigma*sqrt(T) and added a check that
+the up probability lies strictly inside (0, 1). Its description notes that at
+the other end pu rounds to 1, and its results table reports 176 Leisen-Reimer
+cases that raise an error on its 3360-point grid after the change. So the
+errors for deep in-the-money calls are a known and accepted consequence of the
+fix, not a regression.
+
+This is a proposal for a small follow-up that would let most of those cases
+price: compute `pd_` and `down_` from the mirrored small branch PP(-z) instead
+of from `1 - pu_`. Below are a reproduction of one such case, the proposed
+change, a NumPy check and a test sketch. I would be glad to submit it as a
+pull request if this direction is acceptable.
 
 ## Reproduction (Python, QuantLib 1.44 from PyPI)
 
@@ -35,8 +40,9 @@ option.setPricingEngine(ql.BinomialLRVanillaEngine(process, 1001))
 print(option.NPV())          # 1.43: 20.0; 1.44: RuntimeError: invalid up probability: 1
 ```
 
-Expected: 20.0 (intrinsic value; sigma*sqrt(T) is about 5e-4, d2 is about 426).
-Actual with 1.44: `RuntimeError: invalid up probability: 1`.
+Closed form: 20.0 (intrinsic value; sigma*sqrt(T) is about 5e-4, d2 is about 426).
+With 1.44: `RuntimeError: invalid up probability: 1`, as intended by the
+guard in #2729. With the proposed change: 20.0.
 
 Further cases (all with zero rates, sigma 1%) from our runs, QuantLib 1.43 vs
 1.44 at 1001, 2003 and 4005 steps: calls with strike 50 (1 and 7 days) and
@@ -55,10 +61,11 @@ is available.
 
 In 1.43 the same trees had `pu_ == 1` and `down_ = 0/0 = NaN`; all weight
 followed the all-up path, whose node price is finite (`pow(NaN, 0) == 1`), so
-the price was right. The rejection in #2729 is reasonable as a guard, but for
-calls it now rejects cases that can be priced.
+the price was right by accident. The guard added in #2729 is the right
+behaviour for the current formulas; the proposal only removes the
+cancellation that makes it fire on the call side.
 
-## Possible fix
+## Proposed change
 
 Compute the down-side quantities from the mirrored small branch instead of
 from `1 - pu_`:
@@ -81,7 +88,8 @@ stored rather than `1 - pu_` where that is computed. Only points where exp(-x)
 underflows to 0 (|d2| above roughly 27*sqrt(n)) would still be rejected, on
 both sides.
 
-A NumPy implementation of this variant (`scripts/lr_suggested_fix.py` in the
+A NumPy implementation of this variant (`scripts/lr_suggested_fix.py`, output in
+`results/investigations/lr_suggested_fix.txt`, in the
 attached project) reproduces the closed form to 1e-10 at strike 200, 120 (puts)
 and 50, 80 (calls), 1 and 7 days, sigma 1%, 1001 and 4005 steps, except at
 strike 200/50, one day, 1001 steps, where exp(-x) underflows.
@@ -99,10 +107,12 @@ strike 200/50, one day, 1001 steps, where exp(-x) underflows.
 
 - Source of v1.43 and v1.44, and master as of 2026-10-15
   (`binomialtree.cpp`, `binomialdistribution.hpp`, `binomialengine.hpp`).
-- Pull requests #2729 (fix for the put side, merged 2026-09-07) and #2811
-  (greeks reported as not provided when nodes coincide, merged 2026-09-23); the
-  #2729 description says the z > 0 branch is unchanged.
+- Pull request #2729 (merged 2026-09-07): its description covers the case
+  where pu rounds to 1 and reports 176 Leisen-Reimer cases that throw on its
+  grid (moneyness 0.2 to 5.0, vol 0.01 to 0.50, one day to ten years, 801
+  steps). Pull request #2811 (merged 2026-09-23) reports greeks as not
+  provided when nodes coincide.
 - GitHub searches: issues "Leisen Reimer" and "invalid up probability", pull
-  requests "Peizer": no report of the call-side behaviour change found. GitHub
-  search results pages may not list everything, so this should be re-checked
-  before posting.
+  requests "Peizer": no existing proposal for computing pd from PP(-z) found.
+  GitHub search results pages may not list everything, so this should be
+  re-checked before posting.
