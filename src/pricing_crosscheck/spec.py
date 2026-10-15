@@ -84,7 +84,9 @@ class BarrierPoint:
 
 def grid_axes(name: str, profile: str, spec: dict[str, Any] | None = None) -> dict[str, list]:
     spec = spec or load()
-    override = spec["profiles"].get(profile, {})
+    if profile not in spec["profiles"]:
+        raise ValueError(f"unknown profile {profile!r}")
+    override = spec["profiles"][profile]
     return override.get(name, spec["grids"][name])
 
 
@@ -114,16 +116,34 @@ def barrier_points(profile: str, grid: str = "barrier", spec: dict[str, Any] | N
     return points
 
 
-def seed_for(point_id: str, engine: str, spec: dict[str, Any] | None = None) -> int:
-    """Deterministic seed in [1, 2147483646], independent of execution order."""
+def seed_for(instrument: str, point_id: str, engine: str, run: str = "", spec: dict[str, Any] | None = None) -> int:
+    """Deterministic seed in [1, 2147483646], independent of execution order.
+
+    ``run`` distinguishes sample counts, monitoring frequencies and refinement
+    levels so that different runs use independent random numbers.
+    """
     spec = spec or load()
     base = spec["seeds"]["base"]
-    digest = hashlib.sha256(f"{base}|{point_id}|{engine}".encode("utf-8")).digest()
+    key = f"{base}|{instrument}|{point_id}|{engine}|{run}"
+    digest = hashlib.sha256(key.encode("utf-8")).digest()
     return 1 + int.from_bytes(digest[:4], "big") % 2147483646
 
 
-def tolerance(kind: str, reference: float, spec: dict[str, Any] | None = None) -> float:
-    """Absolute tolerance of class ``exact`` or ``numerical`` at a reference value."""
+def tolerance(kind: str, reference: float, instrument: str = "european", spec: dict[str, Any] | None = None) -> float:
+    """Absolute price tolerance of class ``exact`` or ``numerical`` at a reference value."""
     spec = spec or load()
-    t = spec["tolerances"][kind]
-    return max(t["abs"], t["rel"] * abs(reference))
+    tol = spec["tolerances"]
+    if kind == "exact":
+        return max(tol["exact"]["abs"], tol["exact"]["rel"] * abs(reference))
+    if kind == "numerical":
+        floor = tol["numerical"]["abs_per_unit_notional"] * tol["notional"][instrument]
+        return max(floor, tol["numerical"]["rel"] * abs(reference))
+    raise ValueError(f"unknown tolerance class {kind!r}")
+
+
+def greek_tolerance(greek: str, reference: float, instrument: str, spec: dict[str, Any] | None = None) -> float:
+    """Tolerance for a Greek computed by a numerical method or a bump."""
+    spec = spec or load()
+    tol = spec["tolerances"]
+    floor = tol["greeks"]["abs_per_unit_notional"][greek] * tol["notional"][instrument]
+    return max(floor, tol["greeks"]["rel"] * abs(reference))
