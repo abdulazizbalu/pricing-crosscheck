@@ -96,7 +96,7 @@ def comparison_table(prices: Table) -> Table:
 
 SUMMARY_COLUMNS = [
     "instrument", "engine", "points", "not_available", "excluded", "compared", "disagreements",
-    "median_abs_diff", "p95_abs_diff", "max_abs_diff", "max_abs_rel_diff", "max_abs_z", "note",
+    "median_abs_diff", "p95_abs_diff", "max_abs_diff", "max_diff_over_tol", "max_abs_rel_diff", "max_abs_z", "note",
 ]
 
 
@@ -124,6 +124,7 @@ def summary_table(comparisons: Table) -> Table:
             median_abs_diff=float(np.median(d)) if len(d) else float("nan"),
             p95_abs_diff=float(np.percentile(d, 95)) if len(d) else float("nan"),
             max_abs_diff=float(d.max()) if len(d) else float("nan"),
+            max_diff_over_tol=max((abs(r["diff"]) / r["tol"] for r in used), default=float("nan")),
             max_abs_rel_diff=max(rel) if rel else float("nan"),
             max_abs_z=max(z) if z else float("nan"),
             note=note,

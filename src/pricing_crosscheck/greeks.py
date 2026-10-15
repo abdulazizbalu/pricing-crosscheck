@@ -44,7 +44,8 @@ def bumped(instrument: str, p: VanillaPoint, bumps: dict[str, Any]) -> dict[str,
     }
     if "time_days" in bumps:
         h = bumps["time_days"] / 365.0
-        out["theta"] = (f(S, K, max(T - h, 0.0), r, q, v, o) - mid) / h
+        step = min(h, T)
+        out["theta"] = (f(S, K, T - step, r, q, v, o) - mid) / step
     else:
         h = bumps["time_rel"] * T
         out["theta"] = -(f(S, K, T + h, r, q, v, o) - f(S, K, T - h, r, q, v, o)) / (2 * h)

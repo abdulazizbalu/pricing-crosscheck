@@ -369,3 +369,17 @@ runs on manual dispatch and weekly.
    protocol. It is covered by a test. QuantLib prices had been computed in the
    same run, but no comparison with the references had been looked at when
    the fix was made.
+6. **Seeds of refinement runs (sections 11 and 12).** Refinement and
+   convergence runs pass their run tag to the seed derivation:
+   `refine=<factor>` (MC sample refinement), `monitoring=<factor>` (barrier
+   monitoring refinement), `refine=<time factor>x<sample factor>` (LSM) and
+   `convergence;<experiment>;<variant>;<level>` (convergence ladders); barrier
+   MC tags also carry `steps_per_year`. The protocol fixed the rule but not
+   these strings.
+7. **Longstaff-Schwartz refinement (section 11, rule 6).** Time steps and
+   samples are refined in pairs: (2x steps, 4x samples) and (4x steps,
+   16x samples), on the 24-point American MC subset.
+8. **Report columns.** The price summary adds "max abs diff / tol"; the
+   identity summary reports the largest violation and the number of
+   informative points instead of a signed residual.
+

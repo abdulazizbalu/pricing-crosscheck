@@ -42,11 +42,12 @@ def _md_table(header: list[str], rows: list[list[Any]]) -> list[str]:
 
 def price_summary_rows(summary: Table) -> list[list[Any]]:
     return [[r["instrument"], r["engine"], r["points"], r["not_available"], r["excluded"], r["compared"],
-             r["disagreements"], r["median_abs_diff"], r["max_abs_diff"], r["note"]] for r in summary.rows]
+             r["disagreements"], r["median_abs_diff"], r["max_abs_diff"], r["max_diff_over_tol"], r["note"]]
+            for r in summary.rows]
 
 
 PRICE_HEADER = ["instrument", "engine", "points", "not available", "excluded", "compared", "disagreements",
-                "median abs diff", "max abs diff", "note"]
+                "median abs diff", "max abs diff", "max abs diff / tol", "note"]
 
 
 def category_counts(dis: Table) -> list[list[Any]]:
@@ -54,16 +55,26 @@ def category_counts(dis: Table) -> list[list[Any]]:
     return [[i, e, cat, n] for (i, e, cat), n in sorted(c.items())]
 
 
+GEQ_IDENTITIES = {"american_geq_european"}
+
+
 def identity_rows(ids: Table) -> list[list[Any]]:
+    """Per (identity, engine): points, failures, how many points are informative, and the
+    largest violation (|lhs - rhs| for equalities, max(rhs - lhs, 0) for American >= European)."""
     agg: dict[tuple[str, str], list[Any]] = {}
     for r in ids.rows:
-        a = agg.setdefault((r["identity"], r["engine"]), [0, 0, 0.0, r["informative"], r["note"]])
+        a = agg.setdefault((r["identity"], r["engine"]), [0, 0, 0, 0, 0.0])
         a[0] += 1
         a[1] += 0 if r["passed"] else 1
-        a[2] = max(a[2], abs(r["residual"]))
-        if r["note"] and not a[4]:
-            a[4] = r["note"]
+        a[2] += 1 if r["informative"] else 0
+        a[3] += 1 if "machine precision" in r["note"] else 0
+        viol = max(r["rhs"] - r["lhs"], 0.0) if r["identity"] in GEQ_IDENTITIES else abs(r["residual"])
+        a[4] = max(a[4], viol)
     return [[k[0], k[1], a[0], a[1], a[2], a[3], a[4]] for k, a in sorted(agg.items())]
+
+
+IDENTITY_HEADER = ["identity", "engine", "points", "failed", "informative points",
+                   "points at machine precision", "max violation"]
 
 
 def order_rows(orders: Table) -> list[list[Any]]:
@@ -97,8 +108,10 @@ def summary_markdown(tables: dict[str, Table], profile: str) -> str:
     lines += _md_table(["instrument", "engine", "category", "count"], category_counts(tables["disagreements"]))
     lines += [""]
     lines += ["## Identity checks (protocol section 9)", ""]
-    lines += _md_table(["identity", "engine", "points", "failed", "max abs residual", "informative", "note"],
-                       identity_rows(tables["identities"])) + [""]
+    lines += ["Max violation: |lhs - rhs| for equalities; max(European - American, 0) for American >= European. "
+              "Points at machine precision or holding by construction are not informative (protocol section 9).",
+              ""]
+    lines += _md_table(IDENTITY_HEADER, identity_rows(tables["identities"])) + [""]
     lines += ["## Observed convergence orders (protocol section 10)", ""]
     lines += _md_table(["experiment", "instrument", "option/type", "point", "engine", "fitted order",
                         "abs error at finest level", "measurable"], order_rows(tables["orders"])) + [""]
@@ -338,7 +351,9 @@ def findings_markdown(tables: dict[str, Table]) -> str:
         L += ["## 2. QuantLib FD theta behaves like a one-day difference", "",
               "Observed: FD theta does not converge to the analytic theta when the time grid is refined "
               "(`fd_theta_vs_tgrid`). It agrees with a one-sided closed-form difference over 0.99 days, "
-              "(V(T - h) - V(T)) / h with h = min(0.99/365, 0.99 T), up to grid error:", ""]
+              "(V(T - h) - V(T)) / h with h = min(0.99/365, 0.99 T), up to grid error. The step h = 0.99 days was "
+              "chosen after seeing the FD values (a one-day step agrees less well), so the agreement identifies "
+              "the step rather than testing an independent prediction:", ""]
         rows = [[r["point_id"].split("|")[2], r["value"], r["reference"], r["error"]] for r in th]
         L += _md_table(["maturity", "QuantLib FD theta (1600 x 1600)", "closed-form 0.99-day difference",
                         "difference"], rows)
@@ -392,6 +407,19 @@ def findings_markdown(tables: dict[str, Table]) -> str:
         L += _md_table(["engine", "nodes = steps", "error"], rows)
         L += ["", "Likely cause: the discontinuous payoff; the error depends on where the strike falls relative "
               "to the grid. See `docs/figures/digital_strike_alignment.png`.", ""]
+
+    lr_big = [r for r in comp.rows if r["engine"] == "ql_lr" and r["status"] == "ok" and abs(r["diff"]) > 1.0]
+    if lr_big:
+        L += ["## 8. QuantLib LR tree: deep in-the-money options with very small sigma sqrt(T)", "",
+              f"Observed: at {len(lr_big)} grid points the LR engine (1001 steps) differs from the closed form by "
+              f"more than 1 in price units (largest {_g(max(abs(r['diff']) for r in lr_big))}); the value is close "
+              "to 0 where the option is worth its intrinsic value. Refinement does not change it at some points "
+              "and hides it at others (the 4x run happens to agree), so these points are listed together:", ""]
+        L += _md_table(["point", "LR value", "closed form"], [[r["point_id"], r["value"], r["reference"]]
+                                                              for r in lr_big])
+        L += ["", "A minimal reproduction is `scripts/repro_lr_deep_itm.py`; see `docs/open_items.md`. Likely "
+              "cause: the Peizer-Pratt inversion at extreme standardised distances. Not checked against QuantLib's "
+              "source or issue tracker, so reported as an observed difference.", ""]
 
     prem = []
     for r in comp.rows:

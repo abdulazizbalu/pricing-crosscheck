@@ -25,7 +25,7 @@ Likely cause: the Leisen-Reimer construction is defined for odd step counts; con
 
 ## 2. QuantLib FD theta behaves like a one-day difference
 
-Observed: FD theta does not converge to the analytic theta when the time grid is refined (`fd_theta_vs_tgrid`). It agrees with a one-sided closed-form difference over 0.99 days, (V(T - h) - V(T)) / h with h = min(0.99/365, 0.99 T), up to grid error:
+Observed: FD theta does not converge to the analytic theta when the time grid is refined (`fd_theta_vs_tgrid`). It agrees with a one-sided closed-form difference over 0.99 days, (V(T - h) - V(T)) / h with h = min(0.99/365, 0.99 T), up to grid error. The step h = 0.99 days was chosen after seeing the FD values (a one-day step agrees less well), so the agreement identifies the step rather than testing an independent prediction:
 
 | maturity | QuantLib FD theta (1600 x 1600) | closed-form 0.99-day difference | difference |
 |---|---|---|---|
@@ -208,6 +208,33 @@ Observed: our PDE with the strike on a node and a cell-averaged payoff converges
 | ql_fd | 1600 | -1.06e-05 |
 
 Likely cause: the discontinuous payoff; the error depends on where the strike falls relative to the grid. See `docs/figures/digital_strike_alignment.png`.
+
+## 8. QuantLib LR tree: deep in-the-money options with very small sigma sqrt(T)
+
+Observed: at 18 grid points the LR engine (1001 steps) differs from the closed form by more than 1 in price units (largest 100.1); the value is close to 0 where the option is worth its intrinsic value. Refinement does not change it at some points and hides it at others (the 4x run happens to agree), so these points are listed together:
+
+| point | LR value | closed form |
+|---|---|---|
+| put|K=120|D=1|v=0.01|r=-0.02|q=0 | 0 | 20.01 |
+| put|K=120|D=1|v=0.01|r=-0.02|q=0.03 | 0 | 20.01 |
+| put|K=120|D=1|v=0.01|r=0|q=0 | 0 | 20 |
+| put|K=120|D=1|v=0.01|r=0|q=0.03 | 0 | 20.01 |
+| put|K=120|D=1|v=0.01|r=0.05|q=0 | 0 | 19.98 |
+| put|K=120|D=1|v=0.01|r=0.05|q=0.03 | 0 | 19.99 |
+| put|K=200|D=1|v=0.01|r=-0.02|q=0 | 0 | 100 |
+| put|K=200|D=1|v=0.01|r=-0.02|q=0.03 | 0 | 100 |
+| put|K=200|D=1|v=0.01|r=0|q=0 | 0 | 100 |
+| put|K=200|D=1|v=0.01|r=0|q=0.03 | 0 | 100 |
+| put|K=200|D=1|v=0.01|r=0.05|q=0 | 0 | 99.97 |
+| put|K=200|D=1|v=0.01|r=0.05|q=0.03 | 0 | 99.98 |
+| put|K=200|D=7|v=0.01|r=-0.02|q=0 | 0 | 100.1 |
+| put|K=200|D=7|v=0.01|r=-0.02|q=0.03 | 0 | 100.1 |
+| put|K=200|D=7|v=0.01|r=0|q=0 | 0 | 100 |
+| put|K=200|D=7|v=0.01|r=0|q=0.03 | 0 | 100.1 |
+| put|K=200|D=7|v=0.01|r=0.05|q=0 | 0 | 99.81 |
+| put|K=200|D=7|v=0.01|r=0.05|q=0.03 | 0 | 99.87 |
+
+A minimal reproduction is `scripts/repro_lr_deep_itm.py`; see `docs/open_items.md`. Likely cause: the Peizer-Pratt inversion at extreme standardised distances. Not checked against QuantLib's source or issue tracker, so reported as an observed difference.
 
 ## 7. American calls without dividends at negative rates
 
