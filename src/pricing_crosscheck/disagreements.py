@@ -41,7 +41,10 @@ def _cfg(instrument: str, engine: str) -> dict[str, Any]:
 def _resolution_overrides(instrument: str, engine: str, factor: int) -> dict[str, Any]:
     c = _cfg(instrument, engine)
     if engine in TREES or (instrument == "barrier" and engine == "ql_crr"):
-        return {"steps": int(c["steps"]) * factor}
+        steps = int(c["steps"]) * factor
+        if engine == "ql_lr" and steps % 2 == 0:
+            steps += 1  # LR is used with odd step counts only (protocol deviation 1)
+        return {"steps": steps}
     if engine in FD or (instrument == "barrier" and engine == "ql_fd"):
         return {"tGrid": int(c["tGrid"]) * factor, "xGrid": int(c["xGrid"]) * factor}
     if engine == "own_pde":

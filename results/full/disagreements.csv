@@ -1,5 +1,5 @@
 # profile: full
-# content_hash: a6c3d4309d33aa0058162fc79f9a59d42796b199f95e748dbcfe51ba138b3473
+# content_hash: 2eb52e37f467360340cd841e005f608a7a3340313e6614386d2bae1cd418d172
 # python: 3.12.3
 # implementation: CPython
 # platform: linux-x86_64
@@ -830,12 +830,12 @@ european,put|K=105|D=3650|v=1|r=0|q=0,ql_crr,,0.02115414023695905,0.009333516288
 european,put|K=105|D=3650|v=1|r=0|q=0.03,ql_crr,,0.021762247667311385,0.00950003000124282,0.012196936304178507,0.006478105112947219,nan,nan,nan,0.8740918937660409,"discretization, resolved at 4x",
 european,put|K=105|D=3650|v=1|r=0.05|q=0,ql_crr,,0.011928419415276892,0.005466258522746119,0.007144555803961339,0.003911004970056808,nan,nan,nan,0.8043958078485911,"discretization, resolved at 4x",
 european,put|K=105|D=3650|v=1|r=0.05|q=0.03,ql_crr,,0.012509025673388408,0.005587194748743894,0.007281466448233687,0.00393602536288995,nan,nan,nan,0.834079000146014,"discretization, resolved at 4x",
-european,put|K=120|D=1|v=0.01|r=-0.02|q=0,ql_lr,near_expiry;near_zero_vol;deep_moneyness;negative_rate,-20.00657552261542,0.0020006575522615424,-20.00657552261542,-1.368161704817794e-06,nan,nan,nan,11.900866077818788,"discretization, resolved at 4x",
-european,put|K=120|D=1|v=0.01|r=-0.02|q=0.03,ql_lr,near_expiry;near_zero_vol;deep_moneyness;negative_rate,-20.014794362932435,0.0020014794362932437,-20.014794362932435,-3.420103002582664e-06,nan,nan,nan,11.24026184113249,"discretization, resolved at 4x",
-european,put|K=120|D=1|v=0.01|r=0|q=0,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-20.0,0.002,-20.0,-1.4225065569917206e-11,nan,nan,nan,20.177350918025684,"discretization, resolved at 4x",
-european,put|K=120|D=1|v=0.01|r=0|q=0.03,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-20.008218840317014,0.0020008218840317014,-20.008218840317014,-2.0521216725910563e-06,nan,nan,nan,11.608486566976044,"discretization, resolved at 4x",
-european,put|K=120|D=1|v=0.01|r=0.05|q=0,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-19.983562769699006,0.0019983562769699008,-19.983562769699006,3.4203997572035405e-06,nan,nan,nan,11.239072766038307,"discretization, resolved at 4x",
-european,put|K=120|D=1|v=0.01|r=0.05|q=0.03,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-19.99178161001602,0.001999178161001602,-19.99178161001602,1.3680271173655e-06,nan,nan,nan,11.900403441446498,"discretization, resolved at 4x",
+european,put|K=120|D=1|v=0.01|r=-0.02|q=0,ql_lr,near_expiry;near_zero_vol;deep_moneyness;negative_rate,-20.00657552261542,0.0020006575522615424,-20.00657552261542,2.5153212845907547e-12,nan,nan,nan,21.42739839527086,"discretization, resolved at 4x",
+european,put|K=120|D=1|v=0.01|r=-0.02|q=0.03,ql_lr,near_expiry;near_zero_vol;deep_moneyness;negative_rate,-20.014794362932435,0.0020014794362932437,-20.014794362932435,9.443112958251731e-12,nan,nan,nan,20.47343474939923,"discretization, resolved at 4x",
+european,put|K=120|D=1|v=0.01|r=0|q=0,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-20.0,0.002,-20.0,-1.4228618283596006e-11,nan,nan,nan,20.177170783795646,"discretization, resolved at 4x",
+european,put|K=120|D=1|v=0.01|r=0|q=0.03,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-20.008218840317014,0.0020008218840317014,-20.008218840317014,-6.110667527536862e-11,nan,nan,nan,19.12619994631795,"discretization, resolved at 4x",
+european,put|K=120|D=1|v=0.01|r=0.05|q=0,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-19.983562769699006,0.0019983562769699008,-19.983562769699006,1.587707743055944e-11,nan,nan,nan,20.097502791227203,"discretization, resolved at 4x",
+european,put|K=120|D=1|v=0.01|r=0.05|q=0.03,ql_lr,near_expiry;near_zero_vol;deep_moneyness,-19.99178161001602,0.001999178161001602,-19.99178161001602,-1.5127454844332533e-11,nan,nan,nan,20.13268745353749,"discretization, resolved at 4x",
 european,put|K=120|D=3650|v=0.01|r=-0.02|q=0.03,ql_crr,near_zero_vol;deep_moneyness;negative_rate,0.009268914808487239,0.007248650891104859,0.004633829215137553,0.002316757374245526,nan,nan,nan,1.0001467381172247,"discretization, resolved at 4x",
 european,put|K=120|D=3650|v=0.01|r=0.05|q=0.03,ql_crr,near_zero_vol,-0.014600610134235914,0.001,-0.007324788087226808,-0.0035977424330995156,nan,nan,nan,1.0104324235230127,"discretization, converging slowly",
 european,put|K=120|D=3650|v=0.01|r=0.05|q=0.03,own_crr,near_zero_vol,-0.01501570344662434,0.001,-0.007533105010642305,-0.00370209741796379,nan,nan,nan,1.0100286493545416,"discretization, converging slowly",

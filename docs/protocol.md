@@ -346,7 +346,8 @@ runs on manual dispatch and weekly.
    (experiment `lr_even_odd` in `results/full/experiments.csv`, chart
    `docs/figures/lr_even_odd.png`). The convergence ladder therefore uses the
    odd counts 25, 51, 101, ..., 6401 for `ql_lr`; even counts are reported in
-   the separate experiment. The grid setting (1001 steps) is unchanged.
+   the separate experiment. The grid setting (1001 steps) is unchanged, and the
+   2x and 4x refinement runs of section 11 use 2003 and 4005 steps.
 2. **Digital `ql_mc` settings (section 4).** The digital entry of
    `specs/phase1.json` lists only the class and sample count. The remaining
    settings (pseudorandom, one time step, antithetic) are taken from the
