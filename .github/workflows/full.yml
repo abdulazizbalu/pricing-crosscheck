@@ -2,6 +2,11 @@ name: full-grid
 
 on:
   workflow_dispatch:
+    inputs:
+      use_cache:
+        description: "Reuse results regenerated earlier for the same content hash and runner image"
+        type: boolean
+        default: false
   schedule:
     - cron: "17 3 * * 1"
 
@@ -21,20 +26,34 @@ jobs:
           cache-dependency-path: requirements.lock
       - name: Install pinned dependencies
         run: |
-          python -m pip install -r requirements.lock
+          python -m pip install --no-deps -r requirements.lock
           python -m pip install --no-deps -e .
+          python -m pip check
+          python -m pricing_crosscheck verify-env
       - name: Full test suite
         run: python -m pytest -q
       - name: Content hash (code, specs, library versions)
         id: hash
-        run: echo "hash=$(python -m pricing_crosscheck hash)" >> "$GITHUB_OUTPUT"
-      - name: Restore regenerated full results
-        uses: actions/cache@v4
+        run: |
+          echo "hash=$(python -m pricing_crosscheck hash)" >> "$GITHUB_OUTPUT"
+          echo "python=$(python -c 'import platform; print(platform.python_version())')" >> "$GITHUB_OUTPUT"
+          echo "image=${ImageOS:-unknown}-${ImageVersion:-unknown}" >> "$GITHUB_OUTPUT"
+      - name: Restore cached full results (manual runs with use_cache only)
+        # The weekly run always regenerates: its purpose is to detect drift.
+        if: github.event_name == 'workflow_dispatch' && inputs.use_cache
+        uses: actions/cache/restore@v4
         with:
           path: .cache/regenerated
-          key: full-results-${{ steps.hash.outputs.hash }}
+          key: full-results-${{ steps.hash.outputs.hash }}-${{ runner.os }}-${{ steps.hash.outputs.image }}-py${{ steps.hash.outputs.python }}
+          restore-keys: full-results-${{ steps.hash.outputs.hash }}-${{ runner.os }}-${{ steps.hash.outputs.image }}-py${{ steps.hash.outputs.python }}-
       - name: Regenerate full grid and compare with committed results
-        run: python -m pricing_crosscheck check --profile full --jobs 4 --regenerated .cache/regenerated
+        run: python -m pricing_crosscheck check --profile full --jobs 4 --regenerated .cache/regenerated --allow-missing
+      - name: Save regenerated full results
+        if: success()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/regenerated
+          key: full-results-${{ steps.hash.outputs.hash }}-${{ runner.os }}-${{ steps.hash.outputs.image }}-py${{ steps.hash.outputs.python }}-${{ github.run_id }}
       - name: Upload regenerated results
         if: always()
         uses: actions/upload-artifact@v4

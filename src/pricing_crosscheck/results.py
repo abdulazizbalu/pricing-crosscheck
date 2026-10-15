@@ -6,6 +6,7 @@ import csv
 import hashlib
 import json
 import math
+import numbers
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable
@@ -32,9 +33,12 @@ class Table:
 def _format(value: Any) -> str:
     if value is None:
         return ""
-    if isinstance(value, bool):
+    if isinstance(value, bool) or getattr(getattr(value, "dtype", None), "kind", "") == "b":
         return "true" if value else "false"
-    if isinstance(value, float):
+    if isinstance(value, numbers.Integral):
+        return str(int(value))
+    if isinstance(value, numbers.Real):
+        value = float(value)
         if math.isnan(value):
             return "nan"
         return repr(value)
@@ -56,7 +60,11 @@ def write_table(table: Table, directory: Path, header: Iterable[str]) -> Path:
 
 def read_table(path: Path) -> tuple[list[str], list[dict[str, str]]]:
     with path.open("r", encoding=ENCODING, newline="") as handle:
-        lines = [line for line in handle if not line.startswith("#")]
+        lines = handle.readlines()
+    start = 0
+    while start < len(lines) and lines[start].startswith("#"):
+        start += 1  # only the leading header block is metadata
+    lines = lines[start:]
     reader = csv.DictReader(lines)
     rows = list(reader)
     return list(reader.fieldnames or []), rows
@@ -66,12 +74,42 @@ def file_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def write_manifest(directory: Path, content_hash: str, versions: dict[str, str], profile: str) -> Path:
+def write_manifest(
+    directory: Path,
+    content_hash: str,
+    versions: dict[str, str],
+    profile: str,
+    distributions: dict[str, str] | None = None,
+) -> Path:
     files = {p.name: file_sha256(p) for p in sorted(directory.glob("*.csv"))}
-    manifest = {"profile": profile, "content_hash": content_hash, "versions": versions, "files": files}
+    manifest = {
+        "profile": profile,
+        "content_hash": content_hash,
+        "versions": versions,
+        "installed_distributions": distributions or {},
+        "files": files,
+    }
     path = directory / "manifest.json"
     path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding=ENCODING)
     return path
+
+
+def manifest_problems(directory: Path) -> list[str]:
+    """Check that the CSV files in ``directory`` are exactly those in its manifest."""
+    manifest = read_manifest(directory)
+    if manifest is None:
+        return [f"{directory}: no manifest.json"]
+    recorded = manifest.get("files", {})
+    present = {p.name: file_sha256(p) for p in sorted(directory.glob("*.csv"))}
+    problems = []
+    for name in sorted(set(recorded) | set(present)):
+        if name not in present:
+            problems.append(f"{name}: listed in manifest but missing")
+        elif name not in recorded:
+            problems.append(f"{name}: present but not listed in manifest")
+        elif recorded[name] != present[name]:
+            problems.append(f"{name}: content differs from the manifest checksum")
+    return problems
 
 
 def read_manifest(directory: Path) -> dict[str, Any] | None:
@@ -112,6 +150,10 @@ def compare_tables(expected: Path, actual: Path, rtol: float, atol: float) -> li
                 continue
             if math.isnan(fa) and math.isnan(fb):
                 continue
-            if abs(fa - fb) > atol + rtol * max(abs(fa), abs(fb)):
+            if not (math.isfinite(fa) and math.isfinite(fb)):
+                if fa != fb:
+                    problems.append(f"{expected.name} row {i} {col}: {a} != {b}")
+                continue
+            if not abs(fa - fb) <= atol + rtol * max(abs(fa), abs(fb)):
                 problems.append(f"{expected.name} row {i} {col}: {a} != {b}")
     return problems

@@ -16,7 +16,8 @@ Stage = Callable[[str, int, Path], Iterator[Table]]
 
 def environment_stage(profile: str, jobs: int, out_root: Path) -> Iterator[Table]:
     table = Table("environment", ["key", "value"])
-    # Full versions, including platform and Python patch release, are in the header.
+    # Python version and platform are in the file header, not in the table,
+    # so the table compares equal across runners with identical libraries.
     for key, value in env.hashed_versions(env.library_versions()).items():
         table.add(key=key, value=value)
     yield table
