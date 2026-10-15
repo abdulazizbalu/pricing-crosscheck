@@ -1,0 +1,22 @@
+# Exact versions used for every results file in this repository.
+# Install with: pip install -r requirements.lock && pip install --no-deps -e .
+QuantLib==1.43
+numpy==2.2.6
+scipy==1.15.3
+matplotlib==3.10.7
+contourpy==1.3.2
+cycler==0.12.1
+fonttools==4.65.0
+kiwisolver==1.5.1
+packaging==26.3
+pillow==12.3.0
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+six==1.17.0
+pytest==8.4.2
+iniconfig==2.1.0
+pluggy==1.6.0
+Pygments==2.21.0
+exceptiongroup==1.3.0; python_version < "3.11"
+tomli==2.2.1; python_version < "3.11"
+typing_extensions==4.15.0; python_version < "3.11"
