@@ -384,3 +384,12 @@ runs on manual dispatch and weekly.
    identity summary reports the largest violation and the number of
    informative points instead of a signed residual.
 
+9. **Confirmed mechanism before the refinement rules (section 11).** For the
+   QuantLib LR engine, a disagreement at a put whose Leisen-Reimer up
+   probability, recomputed with the QuantLib 1.43 formulas at the protocol
+   setting of 1001 steps, is exactly 0 is classified "LR up probability rounds
+   to 0 (finding 8, mechanism confirmed)" before rule 4. The mechanism was
+   established after the measurements by reading the QuantLib source and
+   recomputing the tree parameters (`scripts/lr_deep_itm_mechanism.py`); the
+   refinement rule had filed some of these points as "discretization, resolved
+   at 4x" because the 4005-step tree no longer collapses.

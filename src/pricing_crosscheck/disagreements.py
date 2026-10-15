@@ -7,6 +7,7 @@ from typing import Any
 
 from pricing_crosscheck import spec
 from pricing_crosscheck.compare import APPROXIMATIONS
+from pricing_crosscheck.diagnostics import LR_MECHANISM, lr_collapsed
 from pricing_crosscheck.pricing import parallel_map, price, samples_of
 from pricing_crosscheck.results import Table
 from pricing_crosscheck.spec import BarrierPoint, VanillaPoint
@@ -75,6 +76,14 @@ def classify(row: dict[str, Any]) -> dict[str, Any]:
         out["category"] = "approximation error"
         out["note"] = f"ref_uncertainty={row['ref_uncertainty']:.3g}"
         return out
+    if eng == "ql_lr":
+        # Protocol deviation 9: a confirmed mechanism takes precedence over the
+        # refinement rules (refinement can hide it when the 4x tree no longer collapses).
+        # The engine must actually have returned 0, the symptom of the mechanism.
+        c = _cfg(inst, eng)
+        if row["value"] == 0.0 and lr_collapsed(p.option, p.spot, p.strike, p.T, p.rate, p.div, p.vol, int(c["steps"])):
+            out["category"] = LR_MECHANISM
+            return out
     if eng in NO_REFINEMENT:
         out["category"] = "not explained"
         out["note"] = "no refinement parameter"

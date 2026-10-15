@@ -140,8 +140,7 @@ Disagreements by category:
 | european | ql_crr | not explained | 5 |
 | european | ql_fd | discretization, resolved at 4x | 64 |
 | european | ql_fd_damped | discretization, resolved at 4x | 63 |
-| european | ql_lr | discretization, resolved at 4x | 6 |
-| european | ql_lr | not explained | 12 |
+| european | ql_lr | LR up probability rounds to 0 (finding 8, mechanism confirmed) | 18 |
 | european | ql_mc | MC noise | 2 |
 
 <!-- results:end -->
@@ -165,8 +164,9 @@ reproduction for the largest one: [docs/open_items.md](docs/open_items.md)
 - Barrier prices assume continuous monitoring and zero rebate.
 - QuantLib engines are tested only through the Python wheel at the settings
   in the protocol; the findings describe observed behaviour and its likely
-  numerical cause, backed by experiments. They are not claims about QuantLib
-  source code.
+  numerical cause, backed by experiments. Except for finding 8, whose mechanism
+  was read from the QuantLib source and confirmed by recomputing the tree
+  parameters, they are not claims about QuantLib source code.
 - ORE (`open-source-risk-engine` 1.8.17.0) installs from PyPI but its
   engines for these products are QuantLib engines, so it is not used as an
   independent second engine in Phase 1.
