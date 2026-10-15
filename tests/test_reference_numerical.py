@@ -167,3 +167,13 @@ def test_mc_is_deterministic():
     b = mc.terminal(100.0, 100.0, 1.0, 0.05, 0.0, 0.3, "call", 1024, 7)
     assert a == b
     assert not math.isnan(a.std_error)
+
+
+@pytest.mark.parametrize("option,K", [("call", 80.0), ("put", 100.0), ("put", 120.0)])
+def test_american_reference_degenerate_zero_rates(option, K):
+    """r = q = 0: early exercise is never strictly optimal, so value - payoff is at
+    rounding level over a whole region; the penalty iteration must still terminate
+    and reproduce the European price."""
+    S, T, v = 100.0, 7 / 365, 0.1
+    value, _ = _ref_pde(S, K, T, 0.0, 0.0, v, option)
+    assert abs(value - cf.european(S, K, T, 0.0, 0.0, v, option)) <= spec.tolerance("numerical", value, "american")
