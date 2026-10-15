@@ -1,0 +1,17 @@
+# profile: full
+# content_hash: 2cacbee11a2222d77cf2c5deb22d943cbebbf9f9c12033f856d4513169991ff1
+# python: 3.12.3
+# implementation: CPython
+# platform: linux-x86_64
+# QuantLib: 1.43
+# numpy: 2.2.6
+# scipy: 1.15.3
+# matplotlib: 3.10.7
+# QuantLib_compiled: 1.43
+# all other packages: requirements.lock
+key,value
+QuantLib,1.43
+numpy,2.2.6
+scipy,1.15.3
+matplotlib,3.10.7
+QuantLib_compiled,1.43

@@ -1,0 +1,50 @@
+{
+  "content_hash": "2cacbee11a2222d77cf2c5deb22d943cbebbf9f9c12033f856d4513169991ff1",
+  "files": {
+    "call_spread.csv": "79c2c0e1e0145e8bd8afe951ddbdbf14824e551a0ce9aa9fa3992dfc0e736c7c",
+    "comparisons.csv": "583e399f5477ce3f4e000abd038a02cfaf388e3c0c5edf6d8279de9a2aae79c8",
+    "convergence.csv": "d1674cbb9db86dd40ee8635fee41063b1a49d59c6fd156240295438512d2a4a9",
+    "disagreements.csv": "b5eafc4e2bf5110c053dc1360ad5ed7c7ea6a1ae62f629a4f17d9b6f2792cf1f",
+    "environment.csv": "6ad95e8ee3d54530b53870ff27c689a9a8d8bf70b4a54ad1b58db26cafb54ccc",
+    "experiments.csv": "651415303863bd6aacd145403b90aed374540e3f07defc77946d51687300f6e1",
+    "greeks.csv": "b9b207d60623c49a7ea6138805ec6f2ca141cf385eb0cdc45d9c4b54210595ec",
+    "greeks_pde_identity.csv": "e4898436f8d6a71f3383f14886cb3bacabd2b3807672109a11f9659260913e86",
+    "greeks_sweep.csv": "03dc418de91c5938d9406969e3a455faadba0970401f227c4bb05d23deb3165c",
+    "identities.csv": "8043521bbb60e01d2841accf6b325be248ab493ca414ef91da01e02da3fec012",
+    "orders.csv": "79a06447138c9da53cfd54bf9d7012a32cb9997ba5d4105bead47c01c136c583",
+    "prices.csv": "92fecb74cbf60557bf3e5b707334135e546a5f33e770fb6dcaaf546892d81605",
+    "summary.csv": "ed0f8d892bd306ed901d9ddfa2f534c144dc6cca324539b167152797bf8bd369"
+  },
+  "installed_distributions": {
+    "Pygments": "2.21.0",
+    "QuantLib": "1.43",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fonttools": "4.65.0",
+    "iniconfig": "2.1.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pip": "24.0",
+    "pluggy": "1.6.0",
+    "pricing-crosscheck": "0.1.0",
+    "pyparsing": "3.3.3",
+    "pytest": "8.4.2",
+    "python-dateutil": "2.9.0.post0",
+    "scipy": "1.15.3",
+    "six": "1.17.0"
+  },
+  "profile": "full",
+  "versions": {
+    "QuantLib": "1.43",
+    "QuantLib_compiled": "1.43",
+    "implementation": "CPython",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "platform": "linux-x86_64",
+    "python": "3.12.3",
+    "scipy": "1.15.3"
+  }
+}

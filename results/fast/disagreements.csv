@@ -1,0 +1,144 @@
+# profile: fast
+# content_hash: 2cacbee11a2222d77cf2c5deb22d943cbebbf9f9c12033f856d4513169991ff1
+# python: 3.12.3
+# implementation: CPython
+# platform: linux-x86_64
+# QuantLib: 1.43
+# numpy: 2.2.6
+# scipy: 1.15.3
+# matplotlib: 3.10.7
+# QuantLib_compiled: 1.43
+# all other packages: requirements.lock
+instrument,point_id,engine,labels,diff0,tol0,diff1,diff2,se0,se1,se2,local_order,category,note
+european,call|K=100|D=365|v=0.1|r=0|q=0.03,ql_crr,,-0.00104281918356941,0.001,-0.0005214412052714223,-0.00026072848832514595,nan,nan,nan,0.9999344480754186,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.1|r=0|q=0.03,own_crr,,-0.0010231838700733853,0.001,-0.0005116239110298793,-0.00025581994736700864,nan,nan,nan,0.9999323797251705,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.1|r=0.05|q=0,ql_crr,,-0.0011552664305103377,0.001,-0.0005776684715597113,-0.0002888430394882846,nan,nan,nan,0.9999339868821189,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.1|r=0.05|q=0,own_crr,,-0.0010722803960430127,0.001,-0.0005361736218478796,-0.0002680951798694764,nan,nan,nan,0.9999325132902989,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0|q=0,ql_crr,,-0.0029992980908630784,0.00119235384740485,-0.0014997424673239834,-0.0007498945691128966,nan,nan,nan,0.9999326169878137,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0|q=0,own_crr,,-0.0029804113922171638,0.00119235384740485,-0.0014902990147280804,-0.0007451728177318984,nan,nan,nan,0.9999322642721152,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0|q=0.03,ql_crr,,-0.0030128336872614625,0.0010327861752731729,-0.0015065089235761775,-0.0007532774485277116,nan,nan,nan,0.9999338961635017,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0|q=0.03,own_crr,,-0.0029503918385991312,0.0010327861752731729,-0.0014752882786588373,-0.0007376672161676368,nan,nan,nan,0.9999322724913674,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0.05|q=0,ql_crr,,-0.002998047250059699,0.001423125478598582,-0.0014991167908267045,-0.0007495816645128883,nan,nan,nan,0.9999327759524836,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0.05|q=0,own_crr,,-0.002945770146883575,0.001423125478598582,-0.0014729772464505686,-0.0007365116625592805,nan,nan,nan,0.9999322942258764,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_crr,,-0.00288329562312839,0.0012442646395566044,-0.0014417377996789327,-0.0007208913593395039,nan,nan,nan,0.9999325006017584,"discretization, resolved at 4x",
+european,call|K=100|D=365|v=0.3|r=0.05|q=0.03,own_crr,,-0.0028697955444911827,0.0012442646395566044,-0.0014349876300734365,-0.0007175162459880369,nan,nan,nan,0.9999322772787748,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0|q=0,ql_crr,,0.002089367859007929,0.001,0.0010839064382732744,0.00015219562842272438,nan,nan,nan,1.8895338468062657,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0|q=0,own_crr,,0.002100288945620754,0.001,0.0010893668544333934,0.00015492571410380407,nan,nan,nan,1.880469647949854,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0|q=0.03,ql_crr,,0.001980638278967106,0.001,0.001026060517283156,0.00015270080966978128,nan,nan,nan,1.8485929050584706,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0|q=0.03,own_crr,,0.0020152922228060532,0.001,0.0010433860886944757,0.00016136288731249948,nan,nan,nan,1.821304169814238,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0.05|q=0,ql_crr,,0.001925762385602603,0.001,0.001005481806008568,8.946235556273052e-05,nan,nan,nan,2.2140025742755762,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0.05|q=0,own_crr,,0.001958044182563512,0.001,0.0010216236647773158,9.753332798645431e-05,nan,nan,nan,2.163687112213172,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0.05|q=0.03,ql_crr,,0.0020025287080516208,0.001,0.001040738786647566,0.0001318666162326565,nan,nan,nan,1.962335823201081,"discretization, resolved at 4x",
+european,call|K=120|D=365|v=0.3|r=0.05|q=0.03,own_crr,,0.002010546298326865,0.001,0.001044747616033348,0.00013387097887207489,nan,nan,nan,1.9543362062500103,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.1|r=0|q=0.03,own_crr,,-0.0010231838734435783,0.001,-0.000511623913532766,-0.00025581993778445167,nan,nan,nan,0.9999324091215525,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.1|r=0.05|q=0,ql_crr,,-0.001038186953048914,0.001,-0.0005191277789193816,-0.0002595724587735049,nan,nan,nan,0.9999285195879679,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.1|r=0.05|q=0,own_crr,,-0.0010722804007572417,0.001,-0.0005361736249813731,-0.00026809515322234745,nan,nan,nan,0.9999325881594937,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0|q=0,ql_crr,,-0.0029655478941190694,0.00119235384740485,-0.0014828674182538748,-0.0007414570568062828,nan,nan,nan,0.9999318142748091,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0|q=0,own_crr,,-0.0029804113944820187,0.00119235384740485,-0.0014902990200802435,-0.000745172821662976,nan,nan,nan,0.999932261014887,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0|q=0.03,ql_crr,,-0.0028927376386818082,0.001328330839788091,-0.001446461806057897,-0.0007232541439172735,nan,nan,nan,0.9999304462316094,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0|q=0.03,own_crr,,-0.002950391841892497,0.001328330839788091,-0.001475288289718435,-0.0007376672075523061,nan,nan,nan,0.9999322817212998,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0.05|q=0,ql_crr,,-0.002914299537021492,0.001,-0.0014572423725844885,-0.000728644318897409,nan,nan,nan,0.9999312574157749,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0.05|q=0,own_crr,,-0.0029457701518040835,0.001,-0.0014729772570696298,-0.0007365116387276771,nan,nan,nan,0.9999323187717207,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_crr,,-0.00286024789418704,0.0010521035490786638,-0.0014302139100053068,-0.0007151294391878338,nan,nan,nan,0.9999319445320305,"discretization, resolved at 4x",
+european,put|K=100|D=365|v=0.3|r=0.05|q=0.03,own_crr,,-0.0028697955394090258,0.0010521035490786638,-0.001434987616486083,-0.0007175162548058722,nan,nan,nan,0.9999322671364121,"discretization, resolved at 4x",
+american,call|K=80|D=365|v=0.1|r=0.05|q=0.03,ql_baw,,0.003176190351531716,0.0020967478554675015,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=1.34e-06
+american,call|K=80|D=365|v=0.3|r=0|q=0.03,ql_baw,,-0.10101609018598623,0.0022024096384448675,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=6.31e-05
+american,call|K=80|D=365|v=0.3|r=0|q=0.03,ql_bjs,,-0.08798035224927858,0.0022024096384448675,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=6.31e-05
+american,call|K=80|D=365|v=0.3|r=0.05|q=0.03,ql_baw,,0.04298740736320994,0.002399831406720701,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=1.37e-05
+american,call|K=80|D=365|v=0.3|r=0.05|q=0.03,ql_bjs,,-0.02251292120835302,0.002399831406720701,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=1.37e-05
+american,call|K=100|D=7|v=0.1|r=0|q=0.03,ql_bjs,near_expiry,-0.0025182869414921427,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.02e-06
+american,call|K=100|D=7|v=0.3|r=0|q=0.03,ql_baw,near_expiry,-0.0012286248773289987,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=4.28e-06
+american,call|K=100|D=7|v=0.3|r=0|q=0.03,ql_bjs,near_expiry,-0.0020101965766523566,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=4.28e-06
+american,call|K=100|D=365|v=0.1|r=0|q=0.03,ql_baw,,-0.0036283265281831234,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.25e-05
+american,call|K=100|D=365|v=0.1|r=0|q=0.03,ql_bjs,,-0.06169810042270818,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.25e-05
+american,call|K=100|D=365|v=0.1|r=0.05|q=0,ql_crr,,-0.0011558149218808822,0.001,-0.0005782169629302558,-0.00028939153085882907,nan,nan,nan,0.9989078970427842,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.1|r=0.05|q=0,own_crr,,-0.0010728288874135572,0.001,-0.0005367221132184241,-0.00026864367124002086,nan,nan,nan,0.998827116593237,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0|q=0,ql_crr,,-0.0029992092636277334,0.001192353919958557,-0.001500100814508798,-0.0007504501480699588,nan,nan,nan,0.9993770219816609,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0|q=0,own_crr,,-0.0029811369292875867,0.001192353919958557,-0.0014910245517860687,-0.0007458983548023213,nan,nan,nan,0.9994058463968478,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0|q=0.03,ql_baw,,-0.011497819344427285,0.0010608542513926597,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=9.53e-05
+american,call|K=100|D=365|v=0.3|r=0|q=0.03,ql_bjs,,-0.08885188315428039,0.0010608542513926597,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=9.53e-05
+american,call|K=100|D=365|v=0.3|r=0|q=0.03,ql_crr,,-0.0016589998804406036,0.0010608542513926597,-0.0008003530002156367,-0.00037102064317906525,nan,nan,nan,1.0803712090856599,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0|q=0.03,ql_fd,,-0.0011153380471711216,0.0010608542513926597,-0.00048457008887048403,-0.0002035738970853629,nan,nan,nan,1.2269282753787853,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0|q=0.03,ql_fd_damped,,-0.0013972342882748734,0.0010608542513926597,-0.0005999794094702082,-0.00025038372145758103,nan,nan,nan,1.2401806388289371,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0|q=0.03,own_crr,,-0.0016105492702571667,0.0010608542513926597,-0.0007761196121798264,-0.00035890256881287996,nan,nan,nan,1.0829443211789733,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0.05|q=0,ql_crr,,-0.002996183509008432,0.0014231252922244767,-0.0014972530497754377,-0.0007477179234616216,nan,nan,nan,1.0012799834214563,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0.05|q=0,own_crr,,-0.0029439064058323083,0.0014231252922244767,-0.0014711135053993019,-0.0007346479215080137,nan,nan,nan,1.0013034465742399,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_baw,,0.02482389326137735,0.0012447372421895307,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=8.1e-06
+american,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_bjs,,-0.004053416904380214,0.0012447372421895307,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=8.1e-06
+american,call|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_crr,,-0.002893740568056913,0.0012447372421895307,-0.0014444652298095662,-0.000719772475900271,nan,nan,nan,1.003661373123347,"discretization, resolved at 4x",
+american,call|K=100|D=365|v=0.3|r=0.05|q=0.03,own_crr,,-0.0028806062453643477,0.0012447372421895307,-0.0014378980604625724,-0.0007164888816468817,nan,nan,nan,1.0036781237126318,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.1|r=0|q=0.03,ql_baw,,0.010010185031069513,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=2.56e-06
+american,call|K=120|D=365|v=0.1|r=0|q=0.03,ql_bjs,,-0.0022044173665343447,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=2.56e-06
+american,call|K=120|D=365|v=0.3|r=0|q=0,ql_crr,,0.002088854233639026,0.001,0.0010832241942493326,0.00015144046030979297,nan,nan,nan,1.8929446070143578,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.3|r=0|q=0,own_crr,,0.0020994725660603564,0.001,0.0010885504748712194,0.00015410933454251818,nan,nan,nan,1.8840003907735983,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.3|r=0|q=0.03,ql_baw,,0.024655656713577834,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=6.69e-05
+american,call|K=120|D=365|v=0.3|r=0|q=0.03,ql_bjs,,-0.047800606881033936,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=6.69e-05
+american,call|K=120|D=365|v=0.3|r=0|q=0.03,ql_crr,,0.00221933286554421,0.001,0.0011571110879486923,0.0002598744206068204,nan,nan,nan,1.5471197619866304,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.3|r=0|q=0.03,own_crr,,0.002249677689330376,0.001,0.0011722804210076987,0.00026745759092872134,nan,nan,nan,1.5361681330415347,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.3|r=0.05|q=0,ql_crr,,0.0019283521889965627,0.001,0.0010080716094025277,9.205215895669028e-05,nan,nan,nan,2.194386598452571,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.3|r=0.05|q=0,own_crr,,0.0019606339859574717,0.001,0.0010242134681712756,0.00010012313138041407,nan,nan,nan,2.1457365067798815,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.3|r=0.05|q=0.03,ql_baw,,0.013325322394027062,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=5.68e-06
+american,call|K=120|D=365|v=0.3|r=0.05|q=0.03,ql_crr,,0.0019994076130789296,0.001,0.001040354326349302,0.00013285270959784157,nan,nan,nan,1.9558365310672048,"discretization, resolved at 4x",
+american,call|K=120|D=365|v=0.3|r=0.05|q=0.03,own_crr,,0.002007356208808986,0.001,0.0010443285439567518,0.00013483974359385087,nan,nan,nan,1.9479894769781958,"discretization, resolved at 4x",
+american,put|K=80|D=365|v=0.1|r=0.05|q=0,ql_baw,,0.004502836368008719,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=1.39e-06
+american,put|K=80|D=365|v=0.1|r=0.05|q=0.03,ql_baw,,0.004717501818594275,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=1.96e-06
+american,put|K=80|D=365|v=0.3|r=0.05|q=0,ql_baw,,0.04641530832250362,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=4.88e-05
+american,put|K=80|D=365|v=0.3|r=0.05|q=0,ql_bjs,,-0.046054556691001114,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=4.88e-05
+american,put|K=80|D=365|v=0.3|r=0.05|q=0.03,ql_baw,,0.035451815605545445,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.83e-05
+american,put|K=80|D=365|v=0.3|r=0.05|q=0.03,ql_bjs,,-0.02461747196678843,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.83e-05
+american,put|K=100|D=7|v=0.1|r=0.05|q=0,ql_baw,near_expiry,-0.0012696030640628742,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.79e-06
+american,put|K=100|D=7|v=0.1|r=0.05|q=0,ql_bjs,near_expiry,-0.004423010116286763,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.79e-06
+american,put|K=100|D=7|v=0.1|r=0.05|q=0.03,ql_bjs,near_expiry,-0.0015766157124897928,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=2.41e-06
+american,put|K=100|D=7|v=0.3|r=0.05|q=0,ql_baw,near_expiry,-0.0018665098584347284,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=6.28e-06
+american,put|K=100|D=7|v=0.3|r=0.05|q=0,ql_bjs,near_expiry,-0.003691478718614194,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=6.28e-06
+american,put|K=100|D=7|v=0.3|r=0.05|q=0.03,ql_bjs,near_expiry,-0.0013128521324299314,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.63e-06
+american,put|K=100|D=365|v=0.1|r=0|q=0.03,own_crr,,-0.0010231076633484548,0.001,-0.0005115477034376426,-0.0002557437276893282,nan,nan,nan,1.000093603996045,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.1|r=0.05|q=0,ql_bjs,,-0.03472188524641062,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=2.14e-05
+american,put|K=100|D=365|v=0.1|r=0.05|q=0,ql_fd,,-0.001370551872453607,0.001,-0.0006584492036694201,-0.00031816944489326815,nan,nan,nan,1.0534448662788667,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.1|r=0.05|q=0,ql_fd_damped,,-0.001444414810067851,0.001,-0.000691185813996853,-0.000332297549699323,nan,nan,nan,1.059968778947064,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.1|r=0.05|q=0.03,ql_baw,,0.0072894288077538505,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.39e-05
+american,put|K=100|D=365|v=0.1|r=0.05|q=0.03,ql_bjs,,-0.05424313641546341,0.001,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=3.39e-05
+american,put|K=100|D=365|v=0.3|r=0|q=0,ql_crr,,-0.0029662734311894923,0.001192353919958557,-0.0014835929553242977,-0.0007421825938767057,nan,nan,nan,0.9994027600149403,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.3|r=0|q=0,own_crr,,-0.002981136931538231,0.001192353919958557,-0.0014910245571311265,-0.0007458983586285939,nan,nan,nan,0.9994058432411046,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.3|r=0|q=0.03,ql_crr,,-0.002890378956291073,0.0013283306039198518,-0.001444103123667162,-0.0007208954615265384,nan,nan,nan,1.001698342268255,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.3|r=0|q=0.03,own_crr,,-0.0029480331595017617,0.0013283306039198518,-0.0014729296073276998,-0.000735308525161571,nan,nan,nan,1.0016655676195556,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_baw,,0.02576787033812522,0.0010790190707704401,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=8.21e-05
+american,put|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_bjs,,-0.06676396023423692,0.0010790190707704401,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=8.21e-05
+american,put|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_crr,,-0.0017594340170479228,0.0010790190707704401,-0.0008532915796877205,-0.00040274092284242613,nan,nan,nan,1.0635937161588442,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.3|r=0.05|q=0.03,ql_fd_damped,,-0.0012123428634485123,0.0010790190707704401,-0.0005223642095515402,-0.00021905682473288834,nan,nan,nan,1.2342103491281364,"discretization, resolved at 4x",
+american,put|K=100|D=365|v=0.3|r=0.05|q=0.03,own_crr,,-0.0017671608713705211,0.0010790190707704401,-0.0008571562671377819,-0.0004046735744225316,nan,nan,nan,1.0633014160361138,"discretization, resolved at 4x",
+american,put|K=120|D=365|v=0.3|r=0.05|q=0,ql_baw,,-0.11036099552229217,0.0022681254033866654,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=9.99e-05
+american,put|K=120|D=365|v=0.3|r=0.05|q=0,ql_bjs,,-0.13223352381091047,0.0022681254033866654,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=9.99e-05
+american,put|K=120|D=365|v=0.3|r=0.05|q=0,ql_fd,,-0.0029923117566745816,0.0022681254033866654,-0.001423259856462522,-0.0006748736208130879,nan,nan,nan,1.0742856115310617,"discretization, resolved at 4x",
+american,put|K=120|D=365|v=0.3|r=0.05|q=0,ql_fd_damped,,-0.0032185321570885606,0.0022681254033866654,-0.0015163147236272323,-0.000713079979895781,nan,nan,nan,1.087133538985858,"discretization, resolved at 4x",
+american,put|K=120|D=365|v=0.3|r=0.05|q=0.03,ql_baw,,-0.04426837457048194,0.002377196682269388,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=7.44e-05
+american,put|K=120|D=365|v=0.3|r=0.05|q=0.03,ql_bjs,,-0.09220924015747656,0.002377196682269388,nan,nan,nan,nan,nan,nan,approximation error,ref_uncertainty=7.44e-05
+digital,call|K=120|D=365|v=0.1|r=0|q=0,own_pde,,2.171678442922445e-05,1e-05,5.415909461601448e-06,1.3523206322842152e-06,nan,nan,nan,2.002650672088012,"discretization, resolved at 4x",
+digital,call|K=120|D=365|v=0.1|r=0|q=0.03,own_pde,,2.043637570913262e-05,1e-05,5.098159236761185e-06,1.2731285193752495e-06,nan,nan,nan,2.0023446978268713,"discretization, resolved at 4x",
+digital,call|K=120|D=365|v=0.1|r=0.05|q=0,own_pde,,1.1852619947252951e-05,1e-05,2.9518843058379263e-06,7.367249553330568e-07,nan,nan,nan,2.00396803524245,"discretization, resolved at 4x",
+digital,call|K=120|D=365|v=0.1|r=0.05|q=0.03,own_pde,,1.8783829639865135e-05,1e-05,4.6826548891071296e-06,1.1690921529056153e-06,nan,nan,nan,2.0030153350741062,"discretization, resolved at 4x",
+digital,put|K=80|D=365|v=0.1|r=0|q=0,own_pde,,2.0341916523867326e-05,1e-05,5.075801851927089e-06,1.267463653338921e-06,nan,nan,nan,2.0022196643091887,"discretization, resolved at 4x",
+digital,put|K=80|D=365|v=0.1|r=0|q=0.03,own_pde,,2.174654911681409e-05,1e-05,5.423082612535796e-06,1.35407187505307e-06,nan,nan,nan,2.0027051288235196,"discretization, resolved at 4x",
+digital,put|K=80|D=365|v=0.1|r=0.05|q=0,own_pde,,1.165464504349371e-05,1e-05,2.9082377349786553e-06,7.262637679362506e-07,nan,nan,nan,2.0021338238059063,"discretization, resolved at 4x",
+digital,put|K=80|D=365|v=0.1|r=0.05|q=0.03,own_pde,,1.664948268380491e-05,1e-05,4.155233523126661e-06,1.0376334217826466e-06,nan,nan,nan,2.002054296388273,"discretization, resolved at 4x",
+barrier,down-and-out|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,0.010929192477469152,0.001,3.0698131835982245e-06,3.0698131835982245e-06,nan,nan,nan,5.89887416337962,"discretization, resolved at 4x",
+barrier,down-and-out|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,0.18035531867216742,0.001,0.11157063481309495,0.06267633066781733,nan,nan,nan,0.7624246713661137,"discretization, converging slowly",
+barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_crr,,-0.001211313932441449,0.001,-0.0006091596131909682,-0.0007105117294334828,nan,nan,nan,0.3848212204214692,"discretization, resolved at 4x",
+barrier,down-and-out|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_fd,,0.002884805433032156,0.001,0.0014521048933135994,0.000728458933308973,nan,nan,nan,0.9927772354155011,"discretization, resolved at 4x",
+barrier,down-and-out|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_fd,,0.0015754539414175248,0.001,0.0007918432244086587,0.0003969737728742942,nan,nan,nan,0.9943259887292406,"discretization, resolved at 4x",
+barrier,down-and-in|call|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,,0.0015407812909611351,0.001,0.0008579573309166477,-0.000618146031126976,nan,nan,nan,0.6588212419384498,"discretization, resolved at 4x",
+barrier,down-and-in|call|H=99.9|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,-0.011100296636672446,0.001,0.00011235293341682606,0.00011235293341682606,nan,nan,nan,3.3132083140970874,"discretization, resolved at 4x",
+barrier,down-and-in|call|H=99.9|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,-0.1809377318293084,0.0012907526398014838,-0.1118618450110418,-0.06282193667952995,nan,nan,nan,0.763076483638088,"discretization, converging slowly",
+barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_crr,,0.0020535417117466537,0.001,0.0010325465359377617,0.0004995378298300324,nan,nan,nan,1.0197242048547595,"discretization, resolved at 4x",
+barrier,down-and-in|put|H=90|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_fd,,-0.0028117469298232223,0.001,-0.0014338845762988939,-0.0007239091516364482,nan,nan,nan,0.9787930955231171,"discretization, resolved at 4x",
+barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,,0.0017276966509900404,0.0010071016433842392,0.0009723905396352706,-0.0005658822828387144,nan,nan,nan,0.8051380286466386,"discretization, resolved at 4x",
+barrier,down-and-in|put|H=90|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_fd,,-0.0014161752385124515,0.0010071016433842392,-0.0007521194217545712,-0.0003870565464438869,nan,nan,nan,0.9356917706583864,"discretization, resolved at 4x",
+barrier,up-and-out|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_fd,,0.0029042367873057806,0.001,0.0014588694627704069,0.0007311106370515574,nan,nan,nan,0.9949987182098582,"discretization, resolved at 4x",
+barrier,up-and-out|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_fd,,0.0013947538587649883,0.001,0.0007008300052627967,0.00035127454460309737,nan,nan,nan,0.9946698017030676,"discretization, resolved at 4x",
+barrier,up-and-out|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,0.010012490211427819,0.001,1.9943011386747145e-06,1.9943011386747145e-06,nan,nan,nan,6.146814969596876,"discretization, resolved at 4x",
+barrier,up-and-out|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,0.1306583206267896,0.001,0.08089590360944218,0.045483188063848434,nan,nan,nan,0.7611968578596154,"discretization, converging slowly",
+barrier,up-and-in|call|H=110|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_fd,,-0.0028011097386348993,0.001,-0.0014331517384245096,-0.0007246895789654317,nan,nan,nan,0.9752817255614983,"discretization, resolved at 4x",
+barrier,up-and-in|call|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,,-0.002141389020877682,0.0012983512970941285,0.0014431935474572555,0.0007364418913908821,nan,nan,nan,0.7699516553591487,"discretization, resolved at 4x",
+barrier,up-and-in|put|H=100.1|K=100|D=30|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,-0.010183548846124157,0.001,-0.0001175129581869605,-0.0001175129581869605,nan,nan,nan,3.21863837449567,"discretization, resolved at 4x",
+barrier,up-and-in|put|H=100.1|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,near_barrier,-0.13123411746548008,0.0010041554095682778,-0.08118380564473959,-0.04562713999204426,nan,nan,nan,0.762089350757559,"discretization, converging slowly",
+barrier,up-and-in|put|H=110|K=100|D=365|v=0.3|r=0.05|q=0.02,ql_crr,,-0.002032666358628532,0.001,0.0009414463819279462,0.00047915761406880364,nan,nan,nan,1.0424006159284018,"discretization, resolved at 4x",
