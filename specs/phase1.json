@@ -640,7 +640,21 @@
   "labels": {
     "near_expiry_max_days": 7,
     "near_zero_vol_max": 0.01,
-    "near_barrier_max_rel_distance": 0.01,
+    "near_barrier_max_rel_distance": 0.0101,
     "deep_moneyness_min_sd": 3.0
+  },
+  "validation": {
+    "crr_min_order": 0.8,
+    "crr_scaled_error_factor": 2.0,
+    "pde_order_range": [
+      1.8,
+      2.2
+    ],
+    "mc_se_slope_range": [
+      -0.55,
+      -0.45
+    ],
+    "fallback_min_resolution": 100,
+    "control_max_order_unaligned_digital": 1.5
   }
 }

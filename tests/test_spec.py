@@ -61,3 +61,11 @@ def test_values_stated_in_protocol():
     assert s["engines"]["american"]["ref_pde"]["levels"] == [[800, 400], [1600, 800], [3200, 1600]]
     assert s["seeds"]["base"] == 20250115
     assert s["market"]["valuation_date"] == "2025-01-15" and s["market"]["spot"] == 100.0
+
+
+def test_run_tag_and_near_barrier_label():
+    assert spec.run_tag(samples=1024) == "n=1024"
+    assert spec.run_tag(samples=4, steps_per_year=12, refine=2) == "n=4;steps_per_year=12;refine=2"
+    limit = spec.load()["labels"]["near_barrier_max_rel_distance"]
+    assert abs(99.0 / 100.0 - 1) <= limit and abs(101.0 / 100.0 - 1) <= limit
+    assert abs(98.0 / 100.0 - 1) > limit

@@ -129,6 +129,18 @@ def seed_for(instrument: str, point_id: str, engine: str, run: str = "", spec: d
     return 1 + int.from_bytes(digest[:4], "big") % 2147483646
 
 
+def run_tag(samples: int | None = None, steps_per_year: int | None = None, refine: int | None = None) -> str:
+    """Canonical ``run`` string for ``seed_for`` (protocol section 10)."""
+    parts = []
+    if samples is not None:
+        parts.append(f"n={samples}")
+    if steps_per_year is not None:
+        parts.append(f"steps_per_year={steps_per_year}")
+    if refine is not None:
+        parts.append(f"refine={refine}")
+    return ";".join(parts)
+
+
 def tolerance(kind: str, reference: float, instrument: str = "european", spec: dict[str, Any] | None = None) -> float:
     """Absolute price tolerance of class ``exact`` or ``numerical`` at a reference value."""
     spec = spec or load()
