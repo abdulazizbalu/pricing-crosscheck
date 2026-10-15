@@ -37,10 +37,10 @@ def main() -> None:
             "Output of `python scripts/repro_lr_deep_itm.py` (zero rates, spot 100):", "", "```", repro.rstrip(),
             "```", "",
             "Observed: the LR engine returns 0 where the analytic engine and the CRR tree return the intrinsic value, "
-            "when the strike is very many standard deviations from the spot (sigma sqrt(T) of order 0.005); with "
-            "sigma = 0.1 or more steps the values agree. Likely cause: the Peizer-Pratt inversion used to set the LR "
-            "probabilities at extreme standardised distances. This has not been checked against QuantLib's source "
-            "code or issue tracker, so it is reported as an observed difference, not as a bug.", ""]
+            "when the strike is very many standard deviations from the spot. The mechanism has since been confirmed "
+            "from the QuantLib 1.43 source and by recomputing the tree parameters (finding 8 in docs/findings.md); "
+            "these points are no longer in the list above. The behaviour was changed upstream in QuantLib 1.44 "
+            "(pull request 2729).", ""]
     (ROOT / "docs" / "open_items.md").write_text("\n".join(out), encoding="utf-8")
 
 

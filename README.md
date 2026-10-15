@@ -140,8 +140,7 @@ Disagreements by category:
 | european | ql_crr | not explained | 5 |
 | european | ql_fd | discretization, resolved at 4x | 64 |
 | european | ql_fd_damped | discretization, resolved at 4x | 63 |
-| european | ql_lr | discretization, resolved at 4x | 6 |
-| european | ql_lr | not explained | 12 |
+| european | ql_lr | LR up probability rounds to 0 (finding 8, mechanism confirmed) | 18 |
 | european | ql_mc | MC noise | 2 |
 
 <!-- results:end -->
