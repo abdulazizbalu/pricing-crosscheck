@@ -1,5 +1,14 @@
-from pricing_crosscheck import env
+import pytest
+
+from pricing_crosscheck import env, stages
 from pricing_crosscheck.cli import main
+
+
+@pytest.fixture(autouse=True)
+def environment_stage_only(monkeypatch):
+    """CLI mechanics are tested on the environment stage only; the measurement
+    stages are exercised by the fast-measurements CI job."""
+    monkeypatch.setattr(stages, "STAGES", [stages.environment_stage])
 
 
 def test_versions_are_recorded():
