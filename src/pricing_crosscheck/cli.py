@@ -78,12 +78,13 @@ def cmd_check(args: argparse.Namespace) -> int:
     """Compare committed results with results regenerated from the current code."""
     _require_locked_env(args.allow_unlocked)
     committed = Path(args.results) / args.profile
-    if not committed.exists():
+    missing = not committed.exists()
+    if missing and not args.allow_missing:
         print(f"no committed results in {committed}")
-        return 0 if args.allow_missing else 1
-    problems = manifest_problems(committed)
+        return 1
+    problems = [] if missing else manifest_problems(committed)
     manifest = read_manifest(committed) or {}
-    if manifest.get("content_hash") != env.content_hash():
+    if not missing and manifest.get("content_hash") != env.content_hash():
         problems.append("committed manifest content_hash does not match the current code/specs/versions")
     with tempfile.TemporaryDirectory() as tmp:
         out_root = Path(args.regenerated) if args.regenerated else Path(tmp)
@@ -95,6 +96,9 @@ def cmd_check(args: argparse.Namespace) -> int:
             print(f"reusing cached regenerated results in {fresh} (same content hash and cache key)")
         else:
             fresh = _run(args.profile, out_root, args.jobs)
+        if missing:
+            print(f"NOTICE: nothing committed in {committed}; regenerated {fresh} without comparison")
+            return 0
         names_c = sorted(p.name for p in committed.glob("*.csv"))
         names_f = sorted(p.name for p in fresh.glob("*.csv"))
         if names_c != names_f:
@@ -158,7 +162,7 @@ def main(argv: list[str] | None = None) -> int:
         "--regenerated",
         help="directory for the regenerated results; reused if its manifest is current (CI cache)",
     )
-    p_check.add_argument("--allow-missing", action="store_true", help="succeed if nothing is committed yet")
+    p_check.add_argument("--allow-missing", action="store_true", help="regenerate without comparing if nothing is committed yet")
     p_check.add_argument("--allow-unlocked", action="store_true")
     p_check.set_defaults(func=cmd_check)
 

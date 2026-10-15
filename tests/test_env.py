@@ -44,4 +44,11 @@ def test_check_refuses_same_directory(tmp_path):
 def test_missing_results(tmp_path):
     assert main(["status", "--profile", "full", "--results", str(tmp_path)]) == 1
     assert main(["status", "--profile", "full", "--results", str(tmp_path), "--allow-missing"]) == 0
-    assert main(["check", "--profile", "full", "--results", str(tmp_path), "--allow-missing", "--allow-unlocked"]) == 0
+
+
+def test_allow_missing_still_regenerates(tmp_path):
+    regen = tmp_path / "regen"
+    code = main(["check", "--profile", "fast", "--results", str(tmp_path / "none"), "--allow-missing",
+                 "--allow-unlocked", "--regenerated", str(regen)])
+    assert code == 0
+    assert (regen / "fast" / "manifest.json").exists()

@@ -45,19 +45,18 @@ jobs:
         with:
           path: .cache/regenerated
           key: full-results-${{ steps.hash.outputs.hash }}-${{ runner.os }}-${{ steps.hash.outputs.image }}-py${{ steps.hash.outputs.python }}
-          restore-keys: full-results-${{ steps.hash.outputs.hash }}-${{ runner.os }}-${{ steps.hash.outputs.image }}-py${{ steps.hash.outputs.python }}-
       - name: Regenerate full grid and compare with committed results
         run: python -m pricing_crosscheck check --profile full --jobs 4 --regenerated .cache/regenerated --allow-missing
-      - name: Save regenerated full results
+      - name: Save regenerated full results (no-op if the key already exists)
         if: success()
         uses: actions/cache/save@v4
         with:
           path: .cache/regenerated
-          key: full-results-${{ steps.hash.outputs.hash }}-${{ runner.os }}-${{ steps.hash.outputs.image }}-py${{ steps.hash.outputs.python }}-${{ github.run_id }}
+          key: full-results-${{ steps.hash.outputs.hash }}-${{ runner.os }}-${{ steps.hash.outputs.image }}-py${{ steps.hash.outputs.python }}
       - name: Upload regenerated results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: full-results-${{ steps.hash.outputs.hash }}
           path: .cache/regenerated
-          if-no-files-found: ignore
+          if-no-files-found: error
